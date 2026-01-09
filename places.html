@@ -1,0 +1,441 @@
+<!-- Validated 16th Nov 2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Places - 16th Nov</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- External JS -->
+  <script defer src="js/places.js"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/master.css">
+  <!--overflow:auto allows scrolling of page which is set as hidden in the master.css -->
+  <style>
+    html,
+    body {
+      overflow: auto !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Navigation bar-->
+
+
+  <div id="nav-placeholder"></div>
+  <script>
+    // Use the Fetch API to load the content of new1.html
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        // Insert the loaded content into the nav-placeholder div
+        document.getElementById('nav-placeholder').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading the navigation:', error);
+      });
+  </script>
+
+
+  <!--End of Navigation bar-->
+
+
+  <div class="container container-sh">
+
+    <div class="accordion" id="places">
+
+      <!--1838 section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1838acc"
+          aria-expanded="false" aria-controls="1838acc">
+          1838 ~ Romford Union Workhouse
+        </button>
+        </h2>
+        <div id="1838acc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1838content" data-auto-load="1838"></div>
+          </div>
+        </div>
+      </div>
+      <!--1838 section end-->
+
+      <!--1870bs section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1870bsacc"
+          aria-expanded="false" aria-controls="1870bsacc">
+          1870 ~ Boyd School
+        </button>
+        </h2>
+        <div id="1870bsacc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1870bscontent" data-auto-load="1870bs"></div>
+          </div>
+        </div>
+      </div>
+      <!--1870bs section end-->
+
+      <!--1876gt section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1876gtacc"
+          aria-expanded="false" aria-controls="1876gtacc">
+          1876 ~ Grey Towers
+        </button>
+        </h2>
+        <div id="1876gtacc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+
+            <!-- Auto-load target element -->
+            <div id="acc1876gtcontent" data-auto-load="1876gt"></div>
+          </div>
+        </div>
+      </div>
+      <!--1876gt section end-->
+
+      <!--1877 section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1877acc"
+          aria-expanded="false" aria-controls="1877acc">
+          1877 ~ Wennington School
+        </button>
+        </h2>
+        <div id="1877acc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1877content" data-auto-load="1877"></div>
+          </div>
+        </div>
+      </div>
+      <!--1877 section end-->
+
+      <!--1878 section start-->
+      <div class="accordion-item catevent">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1878acc"
+          aria-expanded="false" aria-controls="1878acc">
+          1878 ~ St. John the Evangelist, Havering-atte-Bower
+        </button>
+        </h2>
+        <div id="1878acc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1878content" data-auto-load="1878"></div>
+          </div>
+        </div>
+      </div>
+      <!--1878 section end-->
+
+      <!--1905 section start-->
+      <div class="accordion-item catpeople catmisc">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1905acc"
+          aria-expanded="false" aria-controls="1905acc">
+          1905 ~ Upminster Court
+        </button>
+        </h2>
+        <div id="1905acc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1905content" data-auto-load="1905"></div>
+          </div>
+        </div>
+      </div>
+      <!--1905 section end-->
+
+      <!--1928rhrh section start-->
+      <div class="accordion-item catpeople catevent catmisc">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1928rhacc"
+          aria-expanded="false" aria-controls="1928rhacc">
+          1928 ~ R.A.F. Hornchurch
+        </button>
+        </h2>
+        <div id="1928rhacc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1928rhcontent" data-auto-load="1928rh"></div>
+          </div>
+        </div>
+      </div>
+      <!--1928rh section end-->
+
+      <!--1929hr section start-->
+      <div class="accordion-item catevent">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1929hracc"
+          aria-expanded="false" aria-controls="1929hracc">
+          1929 ~ Havering Road School
+        </button>
+        </h2>
+
+        <div id="1929hracc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1929hrcontent" data-auto-load="1929hr"></div>
+          </div>
+        </div>
+      </div>
+      <!--1929hr section end-->
+
+      <!--1958hh section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1958hhacc"
+          aria-expanded="false" aria-controls="1958hhacc">
+          1958 ~ Harold Hill Grammar School
+        </button>
+        </h2>
+        <div id="1958hhacc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1958hhcontent" data-auto-load="1958hh"></div>
+          </div>
+        </div>
+      </div>
+      <!--1958hh section end-->
+
+      <!--1975 section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1975acc"
+          aria-expanded="false" aria-controls="1975acc">
+          1975 ~ Queen's Theatre
+        </button>
+        </h2>
+        <div id="1975acc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+
+            <!-- Auto-load target element -->
+            <div id="acc1975content" data-auto-load="1975"></div>
+          </div>
+        </div>
+      </div>
+      <!--1975 section end-->
+
+      <!--1978rs section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1978rsacc"
+          aria-expanded="false" aria-controls="1978rsacc">
+          1978 ~ Rom Skate Park
+        </button>
+        </h2>
+        <div id="1978rsacc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1978rscontent" data-auto-load="1978rs"></div>
+          </div>
+        </div>
+      </div>
+      <!--1978rs section end-->
+      <!--1838 section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1838acc"
+          aria-expanded="false" aria-controls="1838acc">
+          1838 ~ Romford Union Workhouse
+        </button>
+        </h2>
+        <div id="1838acc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1838content" data-auto-load="1838"></div>
+          </div>
+        </div>
+      </div>
+      <!--1838 section end-->
+
+      <!--1870bs section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1870bsacc"
+          aria-expanded="false" aria-controls="1870bsacc">
+          1870 ~ Boyd School
+        </button>
+        </h2>
+        <div id="1870bsacc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1870bscontent" data-auto-load="1870bs"></div>
+          </div>
+        </div>
+      </div>
+      <!--1870bs section end-->
+
+      <!--1876gt section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1876gtacc"
+          aria-expanded="false" aria-controls="1876gtacc">
+          1876 ~ Grey Towers
+        </button>
+        </h2>
+        <div id="1876gtacc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+
+            <!-- Auto-load target element -->
+            <div id="acc1876gtcontent" data-auto-load="1876gt"></div>
+          </div>
+        </div>
+      </div>
+      <!--1876gt section end-->
+
+      <!--1877 section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1877acc"
+          aria-expanded="false" aria-controls="1877acc">
+          1877 ~ Wennington School
+        </button>
+        </h2>
+        <div id="1877acc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1877content" data-auto-load="1877"></div>
+          </div>
+        </div>
+      </div>
+      <!--1877 section end-->
+
+      <!--1878 section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1878acc"
+          aria-expanded="false" aria-controls="1878acc">
+          1878 ~ St. John the Evangelist, Havering-atte-Bower
+        </button>
+        </h2>
+        <div id="1878acc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1878content" data-auto-load="1878"></div>
+          </div>
+        </div>
+      </div>
+      <!--1878 section end-->
+
+      <!--1905 section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1905acc"
+          aria-expanded="false" aria-controls="1905acc">
+          1905 ~ Upminster Court
+        </button>
+        </h2>
+        <div id="1905acc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1905content" data-auto-load="1905"></div>
+          </div>
+        </div>
+      </div>
+      <!--1905 section end-->
+
+      <!--1928rhrh section start-->
+      <div class="accordion-item catpeople">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1928rhacc"
+          aria-expanded="false" aria-controls="1928rhacc">
+          1928 ~ R.A.F. Hornchurch
+        </button>
+        </h2>
+        <div id="1928rhacc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1928rhcontent" data-auto-load="1928rh"></div>
+          </div>
+        </div>
+      </div>
+      <!--1928rh section end-->
+
+      <!--1929hr section start-->
+      <div class="accordion-item catplaces">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1929hracc"
+          aria-expanded="false" aria-controls="1929hracc">
+          1929 ~ Havering Road School
+        </button>
+        </h2>
+
+        <div id="1929hracc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1929hrcontent" data-auto-load="1929hr"></div>
+          </div>
+        </div>
+      </div>
+      <!--1929hr section end-->
+
+      <!--1958hh section start-->
+      <div class="accordion-item catplaces catevent">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1958hhacc"
+          aria-expanded="false" aria-controls="1958hhacc">
+          1958 ~ Harold Hill Grammar School
+        </button>
+        </h2>
+        <div id="1958hhacc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1958hhcontent" data-auto-load="1958hh"></div>
+          </div>
+        </div>
+      </div>
+      <!--1958hh section end-->
+
+      <!--1975 section start-->
+      <div class="accordion-item catplaces">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1975acc"
+          aria-expanded="false" aria-controls="1975acc">
+          1975 ~ Queen's Theatre
+        </button>
+        </h2>
+        <div id="1975acc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+
+            <!-- Auto-load target element -->
+            <div id="acc1975content" data-auto-load="1975"></div>
+          </div>
+        </div>
+      </div>
+      <!--1975 section end-->
+
+      <!--1978rs section start-->
+      <div class="accordion-item catmisc">
+
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1978rsacc"
+          aria-expanded="false" aria-controls="1978rsacc">
+          1978 ~ Rom Skate Park
+        </button>
+        </h2>
+        <div id="1978rsacc" class="accordion-collapse collapse" data-bs-parent="#places">
+          <div class="accordion-body accordion-body-sh">
+            <!-- Auto-load target element -->
+            <div id="acc1978rscontent" data-auto-load="1978rs"></div>
+          </div>
+        </div>
+      </div>
+      <!--1978rs section end-->
+
+    </div>
+  </div>
+
+</body>
+
+</html>

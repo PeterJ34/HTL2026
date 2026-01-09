@@ -1,0 +1,3900 @@
+<!-- File validated no errors - 19th Nov 2025
+
+includes all cats
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>16th Nov 2025- master.html</title>
+
+  <!-- Bootstrap + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Bootstrap JS (required for accordion) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- External JS -->
+  <script defer src="js/master.js"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading the navigation:', error);
+      });
+  </script>
+
+  <!--End of Navigation bar-->
+
+
+  <!-- =========================
+     Full Timeline Sidebar
+    ========================= -->
+  <div class="sidebar">
+    <div class="accordion" id="timelineAccordion">
+
+      <!-- =========================
+         Menu 1: 4000BC - 1499
+      ========================= -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="century4000BCto1499">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse4000BCto1499" aria-expanded="false" aria-controls="collapse4000BCto1499">
+            <i class="bi bi-hourglass-top me-2"></i>4000BC - 1499
+          </button>
+        </h2>
+        <div id="collapse4000BCto1499" class="accordion-collapse collapse" aria-labelledby="century4000BCto1499"
+          data-bs-parent="#timelineAccordion">
+          <div class="accordion-body">
+            <div class="accordion" id="subcentury4000BCto1499">
+
+              <!-- Sub-menu: 1000BC - 1199 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="subcentury1000BCto1199">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse1000BCto1199" aria-expanded="false" aria-controls="collapse1000BCto1199">
+                    1000BC - 1199
+                  </button>
+                </h2>
+                <div id="collapse1000BCto1199" class="accordion-collapse collapse"
+                  aria-labelledby="subcentury1000BCto1199" data-bs-parent="#subcentury4000BCto1499">
+                  <div class="accordion-body">
+                    <a class="nav-link" href="#4000BC">4000BC - Thames Track</a>
+                    <a class="nav-link" href="#1000BC">1000BC - Great East Road</a>
+                    <a class="nav-link" href="#800BC">800BC - Havering Hoard</a>
+                    <a class="nav-link" href="#49BC">49BC - Boudicca</a>
+                    <a class="nav-link" href="#0946">0946 ~ Pyrgo Palace</a>
+                    <a class="nav-link" href="#0969">0969 ~ Wennington first mentioned</a>
+                    <a class="nav-link" href="#1060">1060 ~ Royal Palace of Havering</a>
+                    <a class="nav-link" href="#1086">1086 ~ Domesday Book</a>
+                    <a class="nav-link" href="#1159sm">1159 ~ Suttons Manor</a>
+                    <a class="nav-link" href="#1159hp">1159 ~ Hornchurch Priory</a>
+                    <a class="nav-link" href="#1170">1170 ~ St. Helen and St. Giles</a>
+                    <a class="nav-link" href="#1199">1199 ~ Rainham Ferry</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sub-menu: 1200 - 1399 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="subcentury1200to1399">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse1200to1399" aria-expanded="false" aria-controls="collapse1200to1399">
+                    1200 - 1399
+                  </button>
+                </h2>
+                <div id="collapse1200to1399" class="accordion-collapse collapse" aria-labelledby="subcentury1200to1399"
+                  data-bs-parent="#subcentury4000BCto1499">
+                  <div class="accordion-body">
+                    <a class="nav-link" href="#1200">1200 ~ Mawneys House</a>
+                    <a class="nav-link" href="#1222">1222 ~ Hornchurch first mentioned</a>
+                    <a class="nav-link" href="#1223">1223 ~ St. Laurence Church</a>
+                    <a class="nav-link" href="#1247">1247 ~ Romford Market Charter</a>
+                    <a class="nav-link" href="#1262">1262 ~ Mitchell or Howard's Mill, Hornchurch</a>
+                    <a class="nav-link" href="#1320">1320 ~ Henry de Yevele</a>
+                    <a class="nav-link" href="#1323">1323 ~ Romford Old Chapel</a>
+                    <a class="nav-link" href="#1334">1334 ~ Stubbers first documented</a>
+                    <a class="nav-link" href="#1374">1374 ~ Royal Palace - Main chapel</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Sub-menu: 1400 - 1499 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="subcentury1400to1499">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse1400to1499" aria-expanded="false" aria-controls="collapse1400to1499">
+                    1400 - 1499
+                  </button>
+                </h2>
+                <div id="collapse1400to1499" class="accordion-collapse collapse" aria-labelledby="subcentury1400to1499"
+                  data-bs-parent="#subcentury4000BCto1499">
+                  <div class="accordion-body">
+                    <a class="nav-link" href="#1400">1400 ~ Alice Perrers dies</a>
+                    <a class="nav-link" href="#1403">1403 ~ Isabella of Valois repatriated</a>
+                    <a class="nav-link" href="#1406">1406 ~ St Edward the Confessor Chapel</a>
+                    <a class="nav-link" href="#1410">1410 ~ Sir Thomas Cooke</a>
+                    <a class="nav-link" href="#1420">1420 ~ Sir Thomas Urswick of Marks and Gobions</a>
+                    <a class="nav-link" href="#1437">1437 ~ Joanna of Navarre dies</a>
+                    <a class="nav-link" href="#1450">1450 ~ Upminster 'Tithe' Barn</a>
+                    <a class="nav-link" href="#1465">1465 ~ Liberty of Havering-atte-Bower</a>
+                    <a class="nav-link" href="#1483lh">1483 ~ Liberty of Havering Courthouse</a>
+                    <a class="nav-link" href="#1483rr">1483 ~ Roger Reede Almshouses</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+         Menu 2: 1500 - 1799
+    ========================= -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="century1500to1799">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse1500to1799" aria-expanded="false" aria-controls="collapse1500to1799">
+              <i class="bi bi-hourglass-split me-2"></i>1500 - 1799
+            </button>
+          </h2>
+          <div id="collapse1500to1799" class="accordion-collapse collapse" aria-labelledby="century1500to1799"
+            data-bs-parent="#timelineAccordion">
+            <div class="accordion-body">
+              <div class="accordion" id="subcentury1500to1799">
+
+                <!-- Sub-menu: 1500 - 1599 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="subcentury1500to1599">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse1500to1599" aria-expanded="false" aria-controls="collapse1500to1599">
+                      1500 - 1599
+                    </button>
+                  </h2>
+                  <div id="collapse1500to1599" class="accordion-collapse collapse"
+                    aria-labelledby="subcentury1500to1599" data-bs-parent="#subcentury1500to1799">
+                    <div class="accordion-body">
+                      <a class="nav-link" href="#1504">1504 ~ Sir Anthony Cooke</a>
+                      <a class="nav-link" href="#1586">1586 ~ Appleton's Almshouses - Jane Ayloffe</a>
+                      <a class="nav-link" href="#1588">1588 ~ Queen Elizabeth I</a>
+                      <a class="nav-link" href="#1592">1592 ~ Francis Quarles</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Sub-menu: 1600 - 1699 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="subcentury1600to1699">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse1600to1699" aria-expanded="false" aria-controls="collapse1600to1699">
+                      1600 - 1699
+                    </button>
+                  </h2>
+                  <div id="collapse1600to1699" class="accordion-collapse collapse"
+                    aria-labelledby="subcentury1600to1699" data-bs-parent="#subcentury1500to1799">
+                    <div class="accordion-body">
+                      <a class="nav-link" href="#1600">1600 ~ Will Kemp - Nine Daies Wonder</a>
+                      <a class="nav-link" href="#1601">1601 ~ Sir Francis Bacon inherits Golden Lion pub</a>
+                      <a class="nav-link" href="#1618">1618 ~ Rising Sun Mill, Victoria Road, Romford</a>
+                      <a class="nav-link" href="#1632">1632 ~ Sun Inn, London Road, Romford</a>
+                      <a class="nav-link" href="#1638">1638 ~ Charles I at Royal Palace</a>
+                      <a class="nav-link" href="#1657">1657 ~ William Derham FRS</a>
+                      <a class="nav-link" href="#1665uc">1665 ~ Upminster Common Mill</a>
+                      <a class="nav-link" href="#1665sp">1665 ~ Samuel Pepys and great Plague</a>
+                      <a class="nav-link" href="#1679">1679 ~ Ann Tipping</a>
+                      <a class="nav-link" href="#1680">1680 ~ The King's Head Inn at Hornchurch</a>
+                      <a class="nav-link" href="#1696">1696 ~ General James Oglethorpe</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Sub-menu: 1700 - 1799 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="subcentury1700to1799">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse1700to1799" aria-expanded="false" aria-controls="collapse1700to1799">
+                      1700 - 1799
+                    </button>
+                  </h2>
+                  <div id="collapse1700to1799" class="accordion-collapse collapse"
+                    aria-labelledby="subcentury1700to1799" data-bs-parent="#subcentury1500to1799">
+                    <div class="accordion-body">
+                      <a class="nav-link" href="#1700">1700 ~ High House Farmhouse, Corbets Tey</a>
+                      <a class="nav-link" href="#1707">1707 ~ Dagenham Breach</a>
+                      <a class="nav-link" href="#1724">1724 ~ Dame Tipping School</a>
+                      <a class="nav-link" href="#1729bh">1729 ~ Bower House</a>
+                      <a class="nav-link" href="#1729rh">1729 ~ Rainham Hall</a>
+                      <a class="nav-link" href="#1760">1760 ~ Elizabeth Balls - Goat Woman of Havering</a>
+                      <a class="nav-link" href="#1784">1784 ~ Wedlake's Foundry</a>
+                      <a class="nav-link" href="#1789">1789 ~ Hornchurch Brewery</a>
+                      <a class="nav-link" href="#1792">1792 ~ Round House</a>
+                      <a class="nav-link" href="#1795mj">1795 ~ Mendoza v Jackson bare knuckle-fight</a>
+                      <a class="nav-link" href="#1795rb">1795 ~ Romford Barracks</a>
+                      <a class="nav-link" href="#1799">1799 ~ Edward Ind takes over Star Inn</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div> <!-- /subcentury1500to1799 -->
+            </div>
+          </div>
+
+          <!-- =========================
+             Menu 3: 19th Century (1800-1899)
+        ========================= -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="century1800to1899">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse1800to1899" aria-expanded="false" aria-controls="collapse1800to1899">
+                <i class="bi bi-hourglass-split me-2"></i>19th Century
+              </button>
+            </h2>
+            <div id="collapse1800to1899" class="accordion-collapse collapse" aria-labelledby="century1800to1899"
+              data-bs-parent="#timelineAccordion">
+              <div class="accordion-body">
+                <div class="accordion" id="subcentury1800to1899">
+
+                  <!-- Sub-menu: 1800 - 1819 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="subcentury1800to1819">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1800to1819" aria-expanded="false" aria-controls="collapse1800to1819">
+                        1800 - 1819
+                      </button>
+                    </h2>
+                    <div id="collapse1800to1819" class="accordion-collapse collapse"
+                      aria-labelledby="subcentury1800to1819" data-bs-parent="#subcentury1800to1899">
+                      <div class="accordion-body">
+                        <a class="nav-link" href="#1800">1800 ~ Old Chapel, Upminster</a>
+                        <a class="nav-link" href="#1803">1803 ~ Upminster Windmill</a>
+                        <a class="nav-link" href="#1810fi">1810 ~ Fairkytes Ironwork</a>
+                        <a class="nav-link" href="#1810cr">1810 ~ Collier Row Mill</a>
+                        <a class="nav-link" href="#1818">1818 ~ Dagenham to Collier Row canal proposed</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Sub-menu: 1820 - 1839 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="subcentury1820to1839">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1820to1839" aria-expanded="false" aria-controls="collapse1820to1839">
+                        1820 - 1839
+                      </button>
+                    </h2>
+                    <div id="collapse1820to1839" class="accordion-collapse collapse"
+                      aria-labelledby="subcentury1820to1839" data-bs-parent="#subcentury1800to1899">
+                      <div class="accordion-body">
+                        <a class="nav-link" href="#1833">1833 ~ Thomas Lewis Wilson (1833-1919)</a>
+                        <a class="nav-link" href="#1835">1835 ~ Dry goods measures</a>
+                        <a class="nav-link" href="#1838">1838 ~ Romford Union Workhouse (later Oldchurch Hospital)</a>
+                        <a class="nav-link" href="#1839">1839 ~ Romford Railway Station</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Sub-menu: 1840 - 1859 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="subcentury1840to1859">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1840to1859" aria-expanded="false" aria-controls="collapse1840to1859">
+                        1840 - 1859
+                      </button>
+                    </h2>
+                    <div id="collapse1840to1859" class="accordion-collapse collapse"
+                      aria-labelledby="subcentury1840to1859" data-bs-parent="#subcentury1800to1899">
+                      <div class="accordion-body">
+                        <a class="nav-link" href="#1845">1845 ~ Corn Exchange</a>
+                        <a class="nav-link" href="#1848">1848 ~ Captain Samuel Davis (1848-1926)</a>
+                        <a class="nav-link" href="#1850ce">1850 ~ Corn Exchange Clock</a>
+                        <a class="nav-link" href="#1850se">1850 ~ St. Edward the Confessor Church, Romford Market</a>
+                        <a class="nav-link" href="#1851ph">1851 ~ Pyrgo House built</a>
+                        <a class="nav-link" href="#1851bs">1851 ~ British & National Schools, Hall Lane</a>
+                        <a class="nav-link" href="#1857">1857 ~ Alfred Bennet Bamford</a>
+                        <a class="nav-link" href="#1858">1858 ~ Victoria Flour Mill</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Sub-menu: 1860 - 1879 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="subcentury1860to1879">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1860to1879" aria-expanded="false" aria-controls="collapse1860to1879">
+                        1860 - 1879
+                      </button>
+                    </h2>
+                    <div id="collapse1860to1879" class="accordion-collapse collapse"
+                      aria-labelledby="subcentury1860to1879" data-bs-parent="#subcentury1800to1899">
+                      <div class="accordion-body">
+                        <a class="nav-link" href="#1864">1864 ~ Charles Thomas Perfect</a>
+                        <a class="nav-link" href="#1867">1867 ~ Admiral Sir Henry Pelly (1867-1942)</a>
+                        <a class="nav-link" href="#1868">1868 ~ Harold Wood Station & Goods Yard opens</a>
+                        <a class="nav-link" href="#1869">1869 ~ Cast Iron Boundary Marker</a>
+                        <a class="nav-link" href="#1870bs">1870 ~ Boyd School</a>
+                        <a class="nav-link" href="#1870ef">1870 ~ Elizabeth Fry</a>
+                        <a class="nav-link" href="#1871">1871 ~ Frances Beatrice Bardsley</a>
+                        <a class="nav-link" href="#1876rf">1876 ~ Romford Football Club</a>
+                        <a class="nav-link" href="#1876gt">1876 ~ Grey Towers</a>
+                        <a class="nav-link" href="#1877">1877 ~ Wennington School</a>
+                        <a class="nav-link" href="#1878">1878 ~ St. John the Evangelist Church,
+                          Havering-atte-Bower</a>
+                        <a class="nav-link" href="#1879">1879 ~ Lady Edna Clarke Hall</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Sub-menu: 1880 - 1899 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="subcentury1880to1899">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1880to1899" aria-expanded="false" aria-controls="collapse1880to1899">
+                        1880 - 1899
+                      </button>
+                    </h2>
+                    <div id="collapse1880to1899" class="accordion-collapse collapse"
+                      aria-labelledby="subcentury1880to1899" data-bs-parent="#subcentury1800to1899">
+                      <div class="accordion-body">
+                        <a class="nav-link" href="#1884">1884 ~ Albert Road School</a>
+                        <a class="nav-link" href="#1886">1886 ~ St. Leonard's Homes</a>
+                        <a class="nav-link" href="#1888gf">1888 ~ Great Flood of Romford</a>
+                        <a class="nav-link" href="#1888vh">1888 ~ Victoria Cottage Hospital, Romford</a>
+                        <a class="nav-link" href="#1889">1889 ~ First Motor Coach Service</a>
+                        <a class="nav-link" href="#1892">1892 ~ Alderman Albert Dyer OBE (1892-1955)</a>
+                        <a class="nav-link" href="#1894">1894 ~ Romford Golf Club</a>
+                        <a class="nav-link" href="#1898">1898 ~ Romford Bowling Club formed</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <!-- =========================
+             Menu 4: 20th-21st Century (1900-Present)
+        ========================= -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="century1900toPresent">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse1900toPresent" aria-expanded="false" aria-controls="collapse1900toPresent">
+                  <i class="bi bi-hourglass-bottom me-2"></i>20th - 21st Century
+                </button>
+              </h2>
+              <div id="collapse1900toPresent" class="accordion-collapse collapse" aria-labelledby="century1900toPresent"
+                data-bs-parent="#timelineAccordion">
+                <div class="accordion-body">
+                  <div class="accordion" id="subcentury1900toPresent">
+
+                    <!-- Sub-menu: 1900 - 1919 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="subcentury1900to1919">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse1900to1919" aria-expanded="false" aria-controls="collapse1900to1919">
+                          1900 - 1919
+                        </button>
+                      </h2>
+                      <div id="collapse1900to1919" class="accordion-collapse collapse"
+                        aria-labelledby="subcentury1900to1919" data-bs-parent="#subcentury1900toPresent">
+                        <div class="accordion-body">
+                          <a class="nav-link" href="#1900">1900 ~ The Mawney Road Public Baths</a>
+                          <a class="nav-link" href="#1905">1905 ~ Upminster Court</a>
+                          <a class="nav-link" href="#1910">1910 ~ Squirrels Heath & Gidea Park station opens</a>
+                          <a class="nav-link" href="#1911">1911 ~ Romford Garden Suburb Exhibition</a>
+                          <a class="nav-link" href="#1913">1913 ~ PC Joseph Watts (Essex County Constabulary)</a>
+                          <a class="nav-link" href="#1915">1915 ~ Royal Flying Corp at Suttons Farm</a>
+                          <a class="nav-link" href="#1916lr">1916 ~ William Leefe Robinson</a>
+                          <a class="nav-link" href="#1916ff">1916 ~ Explosion at Fields Factory</a>
+                          <a class="nav-link" href="#1917">1917 ~ Murex Iron Foundry</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Sub-menu: 1920 - 1939 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="subcentury1920to1939">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse1920to1939" aria-expanded="false" aria-controls="collapse1920to1939">
+                          1920 - 1939
+                        </button>
+                      </h2>
+                      <div id="collapse1920to1939" class="accordion-collapse collapse"
+                        aria-labelledby="subcentury1920to1939" data-bs-parent="#subcentury1900toPresent">
+                        <div class="accordion-body">
+                          <a class="nav-link" href="#1920pb">1920 ~ Peter "The Painter" Blundell</a>
+                          <a class="nav-link" href="#1920rw">1920 ~ The Rainham War Memorial</a>
+                          <a class="nav-link" href="#1921">1921 ~ Royal Liberty School</a>
+                          <a class="nav-link" href="#1922">1922 ~ Essex Sewer Commission Notice</a>
+                          <a class="nav-link" href="#1924">1924 ~ Oldchurch Hospital</a>
+                          <a class="nav-link" href="#1927">1927 ~ Roome's Department Store</a>
+                          <a class="nav-link" href="#1928ic">1928 ~ Ivor Cameron</a>
+                          <a class="nav-link" href="#1928rh">1928 ~ RAF Hornchurch</a>
+                          <a class="nav-link" href="#1928ma">1928 ~ Maylands Aerodrome</a>
+                          <a class="nav-link" href="#1929cc">1929 ~ Capitol Cinema, Upminster</a>
+                          <a class="nav-link" href="#1929hr">1929 ~ Havering Road Infants School</a>
+                          <a class="nav-link" href="#1930">1930 ~ Kenny Ball</a>
+                          <a class="nav-link" href="#1932">1932 ~ Ian Wilkes</a>
+                          <a class="nav-link" href="#1934hw">1934 ~ Harold Wood Cricket Club</a>
+                          <a class="nav-link" href="#1934ub">1934 ~ Upminster Bridge Underground Station</a>
+                          <a class="nav-link" href="#1935tc">1935 ~ Towers Cinema (later Odeon Hornchurch)</a>
+                          <a class="nav-link" href="#1935ep">1935 ~ Elm Park Garden Suburb Underground Station</a>
+                          <a class="nav-link" href="#1936">1936 ~ Havanah Cinema (later Odeon Romford)</a>
+                          <a class="nav-link" href="#1937">1937 ~ Cheetah Racing at Romford Greyhound Stadium</a>
+                          <a class="nav-link" href="#1938">1938 ~ Hornchurch Hoard</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Sub-menu: 1940 - 1959 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="subcentury1940to1959">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse1940to1959" aria-expanded="false" aria-controls="collapse1940to1959">
+                          1940 - 1959
+                        </button>
+                      </h2>
+                      <div id="collapse1940to1959" class="accordion-collapse collapse"
+                        aria-labelledby="subcentury1940to1959" data-bs-parent="#subcentury1900toPresent">
+                        <div class="accordion-body">
+                          <a class="nav-link" href="#1942ww">1942 ~ Warship Week</a>
+                          <a class="nav-link" href="#1942id">1942 ~ Ian Dury</a>
+                          <a class="nav-link" href="#1943">1943 ~ Raimund Sanders Draper (1913 - 43)</a>
+                          <a class="nav-link" href="#1944">1944 ~ Joseph Holt</a>
+                          <a class="nav-link" href="#1947gp">1947 ~ Gidea Park rail crash</a>
+                          <a class="nav-link" href="#1947hh">1947 ~ Harold Hill estate begins</a>
+                          <a class="nav-link" href="#1948">1948 ~ First house on the Harold Hill Estate</a>
+                          <a class="nav-link" href="#1953">1953 ~ Romford War Memorial Social Club</a>
+                          <a class="nav-link" href="#1958hh">1958 ~ Harold Hill Grammar School</a>
+                          <a class="nav-link" href="#1958rc">1958 ~ Romford Cattle Market Closes</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Sub-menu: 1960 - 1979 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="subcentury1960to1979">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse1960to1979" aria-expanded="false" aria-controls="collapse1960to1979">
+                          1960 - 1979
+                        </button>
+                      </h2>
+                      <div id="collapse1960to1979" class="accordion-collapse collapse"
+                        aria-labelledby="subcentury1960to1979" data-bs-parent="#subcentury1900toPresent">
+                        <div class="accordion-body">
+                          <a class="nav-link" href="#1960">1960 ~ King Brothers</a>
+                          <a class="nav-link" href="#1965">1965 ~ London Borough of Havering</a>
+                          <a class="nav-link" href="#1969rb">1969 ~ Romford Bombers - Speedway</a>
+                          <a class="nav-link" href="#1969rm">1969 ~ Romford Market Place closes to through traffic</a>
+                          <a class="nav-link" href="#1975">1975 ~ Queen's Theatre</a>
+                          <a class="nav-link" href="#1978rs">1978 ~ Rom Skatepark</a>
+                          <a class="nav-link" href="#1978fl">1978 ~ Frank Lampard</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Sub-menu: 1980 - 1999 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="subcentury1980to1999">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse1980to1999" aria-expanded="false" aria-controls="collapse1980to1999">
+                          1980 - 1999
+                        </button>
+                      </h2>
+                      <div id="collapse1980to1999" class="accordion-collapse collapse"
+                        aria-labelledby="subcentury1980to1999" data-bs-parent="#subcentury1900toPresent">
+                        <div class="accordion-body">
+                          <a class="nav-link" href="#1980">1980 ~ Hornchurch Country Park</a>
+                          <a class="nav-link" href="#1981">1981 ~ Michelle Suzanne Dockery</a>
+                          <a class="nav-link" href="#1982">1982 ~ Dolphin Centre</a>
+                          <a class="nav-link" href="#1987">1987 ~ Romford Raiders Ice Hockey Club</a>
+                          <a class="nav-link" href="#1990tc">1990 ~ Thames Chase Visitors Centre</a>
+                          <a class="nav-link" href="#1990hs">1990 ~ Havering Street Hockey Club</a>
+                          <a class="nav-link" href="#1996">1996 ~ The Romford Mosque</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Sub-menu: 2000 - Present -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="subcentury2000toPresent">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse2000toPresent" aria-expanded="false"
+                          aria-controls="collapse2000toPresent">
+                          2000 - Present
+                        </button>
+                      </h2>
+                      <div id="collapse2000toPresent" class="accordion-collapse collapse"
+                        aria-labelledby="subcentury2000toPresent" data-bs-parent="#subcentury1900toPresent">
+                        <div class="accordion-body">
+                          <a class="nav-link" href="#2000">2000 ~ RSPB Rainham Marshes</a>
+                          <a class="nav-link" href="#2006">2006 ~ Queen's Hospital, Romford</a>
+                          <a class="nav-link" href="#2010">2010 ~ Havering Museum</a>
+                          <a class="nav-link" href="#2012bt">2012 ~ Brookside Theatre</a>
+                          <a class="nav-link" href="#2012ot">2012 ~ Olympic torch comes to Havering</a>
+                          <a class="nav-link" href="#2018si">2018 ~ Sapphire Ice & Leisure Centre opens</a>
+                          <a class="nav-link" href="#2018hh">2018 ~ Havering Hoard discovered</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Main Content -->
+  <div class="main">
+    <div id="autoTimelineWrap">
+      <button id="scrollUp" class="scroll-arrow"><i class="bi bi-chevron-up"></i></button>
+      <button id="scrollDown" class="scroll-arrow"><i class="bi bi-chevron-down"></i></button>
+
+
+      <div id="autoTimelineTrack">
+
+        <!-- Timeline Cards Here -->
+
+        <!-- 4000 BC Section -->
+        <div class="card catevent catplace" id="4000BC">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              4000 BC ~ Thames Track
+            </h1>
+            <p class="timeline-p">
+              Thames track, which follows the route that is now the A13, is the earliest track through Essex.
+              Archaeological evidence of the oldest settlements of modern humans has been found along this path.
+            </p>
+          </div>
+        </div>
+        <!-- 1000 BC Section -->
+        <div class="card catevent catplace" id="1000BC">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1000 BC ~ The Great East Road
+            </h1>
+            <p class="timeline-p">
+              The Great East Road, the second oldest road in Essex, similar to the route of the
+              A12. The Romans paved the road and called it Iter IX. The river crossing was a ford, and the Saxon word
+              for broad was 'rom' - therefore Romford.
+            </p>
+          </div>
+        </div>
+        <!-- 900 BC Section -->
+        <div class="card catevent" id="900BC">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              900 BC ~ Havering Hoard deposited
+            </h1>
+            <p class="timeline-p">
+              Weapons including axe heads, spearheads, fragments of swords, daggers and knives,
+              alongside some other unusual objects rarely found in the UK, make up a total of 453 bronze objects that
+              were probably deposited sometime between 900-800BC and remained undiscovered until 2019.
+            </p>
+          </div>
+        </div>
+        <!-- 49 BC Section -->
+        <div class="card catevent catpeople" id="49BC">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              49 BC ~ Boudicca
+            </h1>
+            <p class="timeline-p">
+              Boudicca led her troops to London following the Great East road, almost
+              certainly ravaging the tiny settlement of Durolitum (near Romford) on the way.
+            </p>
+          </div>
+        </div>
+        <!-- 946 Section -->
+        <div class="card catevent catplace" id="0946">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              946 ~ Pyrgo Palace
+            </h1>
+            <p class="timeline-p">
+              Pyrgo Palace (originally Portegore) was probably built as a hunting lodge. Over the
+              following 800 years or so it became the home of a great number of dowager queens and other royal
+              persons. Pyrgo's history is tangled with that of the Royal Palace.
+            </p>
+            <br>
+            <div class="link-container">
+              <a href=" https://www.pembertonroses.org.uk/history-of-havering-atte-bower">
+                History of Havering-atte-Bower from Pemberton Rose Garden website
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 969 Section -->
+        <div class="card catevent catplace" id="0969">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              969 ~ Wennington first mentioned
+            </h1>
+            <p class="timeline-p">
+              First recorded in 969AD as Winintuna, there is a suggestion that Wennington was
+              named for the Saxon chief, Wynna. It is a small, ancient marshland village bounded on the west and north
+              by Rainham, and east by the village of Aveley, and south by the Thames. Its boundary with Aveley was
+              being disputed in the 19th century but ultimately settled in 1842.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1060 Section -->
+        <div class="card catevent catplace" id="1060">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1060 ~ The Royal Palace of Havering
+            </h1>
+            <p class="timeline-p">
+              The Royal Palace of Havering originated as a hunting lodge in 1060 for Edward the
+              Confessor.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1086 Section -->
+        <div class="card catevent catplace" id="1086">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1086 ~ The Domesday Book
+            </h1>
+            <p class="timeline-p">
+              The Domesday Book shows the area had 14 manors, the largest being Havering (which
+              included Havering,
+              Hornchurch and the hamlets of Romford and Collier Row) with a population 0f 405 villagers, small
+              holders, slaves, freemen and their familes.
+              <br>
+              Rainham had 211;
+              <br>
+              Upminster had 157;
+              <br>
+              Cranham had
+              130;
+              <br>
+              North Ockendon
+              had 103;
+              <br>
+              Great Warley had 54 ;
+              <br>
+              Wennington had 13.
+            </p>
+            <br>
+            <div class="link-container">
+              <a href="https://en.wikipedia.org/wiki/Domesday_Book"> Domesday Book - Wikipedia
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 1159 Section (Suttons Manor) -->
+        <div class="card catevent cat" id="1159sm">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1159 ~ Suttons Manor
+            </h1>
+            <p class="timeline-p">
+              Suttons Manor was created by Henry II, who gave all the land between Abbs Cross
+              Lane, Dover's Corner. the River Ingrebourne and Pelt Street (now High Street) to the Monastery of St.
+              Nicolas and St. Bernard of Savoy
+              in Switzerland in thanks for the hospitality given to a royal envoy in difficulties in the St. Bernard
+              Pass
+              between Switzerland and Italy. The name came from an early resident, but Suttons Lane was originally
+              Lake Street,
+              overlooking water now taken up by Hornchurch Railway Station. In 1392Richard II and the Pope agreed this
+              land could be sold to William
+              of
+              Wykeham to endow New College, Oxford, thus creating an absentee landlord for a large part of Hornchurch.
+              The
+              largest
+              residence on the estate was Hackton (not to be confused with Hacton in Upminster) that was roughly where
+              Central
+              Drive is
+              now. Other large properties were Suttons Gate, Suttons Farm, Elm Farm and Sockets (now Albyns Farm, the
+              only one
+              still standing). Suttons Farm can be traced back to 1397, the last farmhouse being Victorian. It was
+              used as an
+              airfield
+              in WW1, reverting to a farm after the war and then becoming RAF Hornchurch in 1928. Suttons Gate stood
+              where
+              Ravenscourt Grove is today and was named after a gate on the north side of the house to stop people
+              having access
+              to
+              Suttons Farm. The gate was removed 1840 and the Georgian property was overtaken by residential
+              development in
+              1936. A
+              small part of the estate in now the Hornchurch Country Park.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1159 Section (Hornchurch Priory) -->
+        <div class="card catevent catplace" id="1159hp">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1159 ~ Hornchurch Priory
+            </h1>
+            <p class="timeline-p">
+              Founded in 1159, as the hospice of St. Nicholas and St. Bernard, Montjoux
+              (Valais, Switzerland). Hornchurch Priory, which closed in 1391, stood where the (now closed) White Hart
+              was, at the bottom of Hornchurch Hill.
+            </p>
+            <div class="link-container">
+              <a href=" https://www.british-history.ac.uk/vch/essex/vol2/pp195-196">
+                Hospital or Priory of Hornchurch - British History Online
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 1170 Section -->
+        <div class="card catevent catplace" id="1170">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1170 ~ St. Helen and St. Giles
+            </h1>
+            <p class="timeline-p">
+              is a complete, late Norman church built by Richard de Lucy, justiciar, who
+              married the daughter of Henry II. The dedication of the church to these two saints is unique in England.
+              It is a Grade 1 listed building.
+            </p>
+            <div class="link-container">
+              <a href="https://en.wikipedia.org/wiki/Church_of_St_Helen_and_St_Giles"> St. Helen and St.Giles ~
+                Wikipedia
+              </a>
+              <a href="http://rainhamparishchurch.org.uk/church-history"> Rainham Parish Churches
+              </a>
+              <a href="https://en.wikipedia.org/wiki/Justiciar"> Justiciar ~ Wikipedia
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <!-- 1199 Section -->
+        <div class="card catevent catplace" id="1199">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1199 ~ Rainham Ferry
+            </h1>
+            <p class="timeline-p">
+              The ferry from Rainham Essex to the Lesnes Abbey, Erith in Kent was the lowest
+              crossing on the Thames until the Gravesend- Tilbury ferry was established in 1268. It probably existed
+              before 1199 but this is the first recorded date for it. The ferry was governed by the tide for
+              operation, downstream on the ebb tide and upstream on the incoming tide for the return journey, it was
+              only steered by a
+              rudder and relied on the tide for power.
+            </p>
+
+          </div>
+        </div>
+        <!-- 1200 Section -->
+        <div class="card catevent catplace" id="1200">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1200 ~ Mawneys House
+            </h1>
+            <p class="timeline-p">
+              King John granted 'the wood at Romford' to Roger Bigod, the Earl of Norrfolk, at a
+              rent of 5 shillings a year. It stood 150 yards north of Romford High Street on the site now occuppied by
+              the United Services Club. Walter de Mauny held the estate in the 14th centuary when the estate covered
+              140 acres. It was rebuilt in the 17th century, sold for housing development in 1883 and finally
+              demolished
+              in 1935.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1222 Section -->
+        <div class="card catevent catplace" id="1222">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1222 ~ Hornchurch first mentioned
+            </h1>
+            <p class="timeline-p">
+              Monasterium Cornutum, which roughly translates as 'church with horn like gables'. Although
+              Roman remains, sufficient to prove a settlement, have been found at Mardyke farm in South
+              Hornchurch, the origins of the main village are obscure. It probably dates from Saxon times,
+              and a church, described in charters and legal documents as the 'Ecclesisa de Havering' once
+              occupied the site of the present Church of St Andrew, which dates from the 13th century. This
+              prominent medieval church was once the principal church in Havering. The unusual Highland
+              bulls head on the eastern gable of the chancel was first mentioned in 1824, but 'points of lead
+              fashioned like horns', apparently in the same position, can be traced back to 1610, and could
+              have even earlier origins. By 1384 a bull's head and horns appeared on the seal of the Prior of
+              Hornchurch, and as well as suggesting that the church had horn-like gables, it could also
+              reflect the area's long association with the leather industry. The 'Hornchurch Hoard,'
+              consisting of 448 silver pennies from around 1223-60 was found by workmen in the Upminster
+              Road, an area within the bounds of the former Hornchurch Priory. They were mostly English
+              coins, struck in the reign of Henry III, with a few contemporary Scottish and Irish coins. At the
+              time of the Domesday survey in 1086, Hornchurch was part of the royal manor of Havering, but
+              from the 13th century onwards it became a flourishing community in its own right. There were
+              at least 10 manors, several farms, and a leather industry that lasted over six centuries. The
+              industry supplied work to a large number of people including fellmongers, tanners and
+              skinners, and the goods produced had an outlet at Romford Market. In 1789 the Old
+              Hornchurch Brewery was founded by John Woodfine, supplying the inns in the area. The
+              economy, involving agriculture and small trades and crafts, developed further in the 18th
+              century when the Wedlake Brothers, Thomas and Robert, opened an innovative iron foundry in
+              Billet Lane. They specialised in agricultural implements, further serving the economy of the
+              area. Thomas lived opposite the foundry at Fairkytes, and like several other gentlefolk who
+              chose to live locally, built or improved houses in the area.
+            </p>
+
+            <br>
+          </div>
+        </div>
+
+        <!-- 1223 Section -->
+        <div class="card catevent catplace" id="1223">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1223 ~ St. Laurence Church
+            </h1>
+            <p class="timeline-p"> St. Laurence Church has a 13th Century tower, rubble-walled, four square and sturdy
+              buttresses only at the foot. It was much rebuilt by W G Bartlett in 1862-63 but retains the 14th century
+              north arcade with short quatrefoil piers, moulded capitals and double chamfered arches.
+            </p>
+            <br>
+            <div class="link-container">
+              <a href="https://upminsterparish.co.uk/history">
+                St. Laurence Church history
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1247 Section -->
+        <div class="card catevent catplace" id="1247">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1247 ~ Romford Market Charter
+            </h1>
+            <p class="timeline-p">
+              Romford Market Charter was granted by Henry III. It was an obvious choice, being
+              half-way between Hornchurch (industry) and Colliers Row (manufacturing charcoal). Under the
+              Charter, no other market could be held within 6 and two-third miles (the distance a
+              flock of sheep could be driven in a day).
+            </p>
+          </div>
+        </div>
+
+        <!-- 1262 -->
+        <div class="card catevent catplace" id="1262">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1262 ~ Mitchell or Howard's Mill, Hornchurch
+            </h1>
+            <p class="timeline-p">
+              The mill was 300 yards from the rear of St. Andrew's Church in the Dell, Hornchurch.
+              A number of mills stood on this site, the last was post mill which closed down in 1912 an was
+              destroyed by fire in 1921
+            </p>
+          </div>
+        </div>
+
+        <!-- 1320 Section -->
+        <div class="card catevent catpeople" id="1320">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1320 ~ Henry de Yevele
+            </h1>
+            <p class="timeline-p">
+              Henry de Yevele, master mason and architect, directed the King's works at
+              Westminster, the Tower of London and Havering Royal Palace.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1323 Section -->
+        <div class="card catevent catplace" id="1323">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1323 ~ Romford Old Chapel
+            </h1>
+            <p class="timeline-p">
+              was a wooden chapel of ease by the River Rom for the residents of an expanding
+              Romford. It was built after residents had petitioned monks of St. Bernard at St. Andrew's Hornchurch for
+              a place of worship. It survived for 83 years until overcome by rot.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1334 Section -->
+        <div class="card catevent catplace" id="1334">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1334 ~ Stubbers first documented
+            </h1>
+            <p class="timeline-p">
+              Stubbers has a documented history dating back to 1334, although only the garden wall remains from the
+              original
+              mansion.
+              The estate was named after William Stubbers, a yeoman farmer who had formed it between 1438 and 1463.
+              Humphrey Repton, the great late Georgian landscape designer provided designs for Stubbers in 1796,
+              detailing them in one of the trademark Red Books (so named for their red morocco binding) which he
+              presented to
+              his
+              clients. The Red Book for Stubbers still exists, and is held by the Essex Record Office. William Coys
+              the
+              famous
+              botanist, lived at Stubbers, North Ockendon, until his death in 1627. He cultivated many unusual species
+              in his
+              walled
+              gardens, and established one of the earliest plant collections recorded in England. A hundred years
+              later
+              many of
+              the plants from
+              Stubbers were used to establish Kew Gardens.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1374 Section -->
+        <div class="card catevent catplace" id="1374">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1374 ~ Royal Palace Main chapel
+            </h1>
+            <p class="timeline-p">
+              Main chapel at the Royal Palace rebuilt.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1400 Section -->
+        <div class="card catevent catpeople" id="1400">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1400 ~ Alice Perrers
+            </h1>
+            <p class="timeline-p">
+              lived at Gaynes Manor, Upminster. She died there in 1400 after a life of great
+              notoriety. She was married to Sir William of Windsor, Viceroy of Ireland, but was also the notorious
+              mistress of Edward III. Her influence over the king led to accusations of witchcraft in 1376.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1403 Section -->
+        <div class="card catevent catpeople" id="1403">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1403 ~ Isabella of Valois
+            </h1>
+            <p class="timeline-p">
+              Isabella of Valois was only 7 years old when she married Richard II in 1396, but she
+              was widowed three years later when her husband was dethroned and murdered. She was held at Havering
+              Palace until she was repatriated to France in 1403.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1406 Section -->
+        <div class="card catevent catplace" id="1406">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1406 ~ St Edward the Confessor Chapel
+            </h1>
+            <p class="timeline-p">
+              Henry VI gives permission for the building of St Edward the Confessor Chapel in
+              Romford, on the site of the present church.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1410 Section -->
+        <div class="card catevent catpeople" id="1410">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1410 ~ Sir Thomas Cooke
+            </h1>
+            <p class="timeline-p">
+              Sir Thomas Cooke began building the first recorded Giddy Hall in 1467. He was Lord
+              Mayor of London in 1462.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1420 Section -->
+        <div class="card catevent catpeople" id="1420">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1420 ~ Sir Thomas Urswick of Marks and Gobions
+            </h1>
+            <p class="timeline-p">
+              Sir Thomas Urswick of Marks and Gobions (known as Up-Havering) was elected to the
+              common Council of the City of London and was elevated to Recorder of London in 1454. Using his position
+              he obtained Havering Liberty its first charter. He was knighted on the field at the Battle of Barnet,
+              5th May 1471 and the next year he was created Chief Baron of the Exchequer.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1437 Section -->
+        <div class="card catevent catpeople" id="1437">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1437 ~ Joanna of Navarre</h1>
+            <p class="timeline-p">
+              Joanna of Navarre was the second wife of Henry IV (reigned 1399-1413), she was accused of witchcraft but
+              later
+              pardoned.
+              She died in some disgrace at Havering in 1437 and her ghost is said to haunt the site of the Palace.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1450 Section -->
+        <div class="card catevent catplace" id="1450">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1450 ~ Hall Barn
+            </h1>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1465 Section -->
+        <div class="card catevent" id="1465">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1465 ~ The Liberty of Havering
+            </h1>
+            <p class="timeline-p">
+              The Liberty of Havering was formed by Royal Charter in 1465. Edward IV grants the Liberty of Havering,
+              removing
+              Romford, Hornchurch,
+              Havering-atte-Bower and Noak Hill from the Hundred system. It meant that the courts were overseen by the
+              King's
+              steward or even occasionally by the King himself. It also meant that residents could carry a docket from
+              the Court
+              or have the Royal Arms stamped on their carts, allowing toll-free passage throughout the kingdom. The
+              powers of
+              the Liberty
+              had been in gradual decline since around 1828 and in 1892 its Monasterium Cornutum, which roughly
+              translates as
+              'church with
+              horn like gables'. Although Roman remains, sufficient to prove a settlement, have been found at Mardyke
+              farm in
+              South
+              Hornchurch, the origins of the main village are obscure. It probably dates from Saxon times,
+              and a church, described in charters and legal documents as the 'Ecclesisa de Havering' once
+              occupied the site of the present Church of St Andrew, which dates from the 13th century. This
+              prominent medieval church was once the principal church in Havering. The unusual Highland
+              bulls head on the eastern gable of the chancel was first mentioned in 1824, but 'points of lead
+              fashioned like horns', apparently in the same position, can be traced back to 1610, and could
+              have even earlier origins. By 1384 a bull's head and horns appeared on the seal of the Prior of
+              Hornchurch, and as well as suggesting that the church had horn-like gables, it could also
+              reflect the area's long association with the leather industry. The 'Hornchurch Hoard,'
+              consisting of 448 silver pennies from around 1223-60 was found by workmen in the Upminster
+              Road, an area within the bounds of the former Hornchurch Priory. They were mostly English
+              coins, struck in the reign of Henry III, with a few contemporary Scottish and Irish coins. At the
+              time of the Domesday survey in 1086, Hornchurch was part of the royal manor of Havering, but
+              from the 13th century onwards it became a flourishing community in its own right. There were
+              at least 10 manors, several farms, and a leather industry that lasted over six centuries. The
+              industry supplied work to a large number of people including fellmongers, tanners and
+              skinners, and the goods produced had an outlet at Romford Market. In 1789 the Old
+              Hornchurch Brewery was founded by John Woodfine, supplying the inns in the area. The
+              economy, involving agriculture and small trades and crafts, developed further in the 18th
+              century when the Wedlake Brothers, Thomas and Robert, opened an innovative iron foundry in
+              Billet Lane. They specialised in agricultural implements, further serving the economy of the
+              area. Thomas lived opposite the foundry at Fairkytes, and like several other gentlefolk who
+              chose to live locally, built or improved houses in the area.
+              <br>
+              Courts of Quarter Sessions and Petty Sessions were transferred to Essex County Council.
+            </p>
+            <br>
+            <div class="link-container">
+              <a href="https://www.british-history.ac.uk/vch/essex/vol7/pp9-17">
+                Parish of Havering-atte-Bower - British History Online
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1482 Section -->
+        <div class="card catevent catplace" id="1482">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1482 ~ The Lion Inn, North Street, Romford
+            </h1>
+            <p class="timeline-p"> The Lion Inn opens in 1482. At various times known as the Golden Lion and the Red
+              Lion Inn.
+              Looks like two conjoined buildings, but actually it was built on three timber sections.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1483 Section (Liberty Courthouse) -->
+        <div class="card catevent catplace" id="1483lh">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1483 ~ Liberty of Havering Courthouse
+            </h1>
+            <p class="timeline-p">
+              The Liberty of Havering Courthouse was at the west end of Romford Market,
+              together with a prison cage. It was rebuilt 1737/40, but by 1790 the cells were not being
+              used. Rebuilding took place in 1826 to include two shops on the South Street side. It lost its legal
+              powers in 1892 and was used by the Romford Local Board as council offices until 1931. It was demolished
+              in 1933.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1483 Section (Roger Reede Almshouses) -->
+        <div class="card catevent catpeople" id="1483rr">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1483 ~ Roger Reede Almshouses
+            </h1>
+            <p class="timeline-p">
+             The Roger Reede Almshouses were established by the will of Roger Reede, who possibly set up the endowment to make up for the misdeeds of
+              his earlier days.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1504 Section -->
+        <div class="card catevent catpeople" id="1504">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1504 ~ Sir Anthony Cooke
+            </h1>
+            <p class="timeline-p">
+              Sir Anthony Cooke was a scholar and close associate of Henry VIII. He was a tutor to the young Prince
+              Edward, Cooke was knighted in 1547.
+            </p>
+            <br>
+            <figure class="centered-figure">
+              <img src="images/1504-SirAnthonyCooke.jpg" width="300" alt="Sir Anthony Cooke">
+              <figcaption>
+                Sir Anthony Cooke<br>
+              </figcaption>
+            </figure>
+            <div class="copyright-text">
+              © Havering Local Studies Library
+            </div>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1586 Section -->
+        <div class="card catevent catplace" id="1586">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1586 ~ Appleton's Almshouses
+            </h1>
+            <p class="timeline-p">
+              In 1586 Jane Ayloffe, a widow, bought a house on the south side of High
+              Street for conversion into 3 alms-houses. The alms-houses were given in trust for the aged poor who had
+              lived in Hornchurch for at least 7 years. Appleton's Almshouses were three cottages and gardens in
+              Hornchurch High Street that were let to poor people at 10 shillings 2 pence per annum. They were
+              demolished in
+              1967.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1588 Section -->
+        <div class="card catevent catpeople" id="1588">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1588 ~ Queen Elizabeth
+            </h1>
+            <p class="timeline-p">
+              Queen Elizabeth who was brought up largely in Havering, is reputed
+              to have stayed at the Royal Palace the night before delivering her famous "I have but the body of a weak
+              and feeble woman..." speech at Tilbury. The Royal Palace was prepared as a command post in case the
+              Spanish Armada had landed on the Thames Estuary.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1592 Section -->
+        <div class="card catevent catpeople" id="1592">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1592 ~ Francis Quarles
+            </h1>
+            <p class="timeline-p">
+              Francis Quarles, born at Stewards, Romford, became a Royalist poet. His most famous
+              work was <em> Emblems </em> (1635), together with <em> Feast of Wormes </em>
+              (1620) and <em> Argalus and Parthenia </em> (1629). Latterly he wrote tracts in defence of Charles I,
+              consequently
+              a great deal of his output was destroyed
+              by Parliamentarians during the Civil Wars. In 1618 he married Ursula Woodgate, they had 18 children.
+              The Quarles family of Romford, divided by the Civil War: Francis Quarles (1592&ndash;1644) of Stewards
+              Manor
+              in Romford was poet and Protestant patriot. The Puritans loved his poetry and the Royalists his
+              political pamphlets. His son, Lieutenant Colonel James Quarles, was the most senior officer in Denzil
+              Holles'
+              Parliamentarian regiment at the Battle of Brentford, where he was killed in 1642. Another son, John
+              Quarles (1625&ndash;1665), was studying in Oxford when the town became the King's headquarters. He is
+              believed to
+              have served in one of
+              the Royalist companies there in 1642.
+            </p>
+            <figure class="centered-figure">
+              <img src="images/1592-FrancisQuarles.jpg" width="300" alt="Francis Quarles">
+              <figcaption>
+                Francis Quarles <br>
+              </figcaption>
+            </figure>
+            <div class="copyright-text">
+              © Havering Local Studies Library
+            </div>
+          </div>
+        </div>
+
+        <!-- 1600 Section -->
+        <div class="card catevent catpeople" id="1600">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1600 ~ Will Kemp
+            </h1>
+            <p class="timeline-p">
+              Will Kemp, a clown and actor, danced from London to Norwich, attracting huge crowds.
+              After a slight injury in Chadwell Heath, he was brought to Romford, stayed overnight, and then went back
+              to the point where he stopped dancing before beginning again.
+            </p>
+            <br>
+            <figure class="centered-figure">
+              <img src=" images/1600-WillKemp.jpg" width="300" alt="Will Kemp">
+              <figcaption>
+                Will Kemp <br>
+              </figcaption>
+            </figure>
+            <div class="copyright-text">
+              © Havering Local Studies Library
+            </div>
+          </div>
+        </div>
+
+        <!-- 1601 Section -->
+        <div class="card catevent catpeople" id="1601">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1601 ~ Sir Francis Bacon
+            </h1>
+            <p class="timeline-p">
+              Sir Francis Bacon the Elizabethan statesman, philosopher, essayist and author, became
+              landlord of the Golden Lion pub when he inherited it from his father in 1601.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1618 Section -->
+        <div class="card catevent catplace" id="1618">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1618 ~ Rising Sun Mill
+            </h1>
+            <p class="timeline-p">
+              Rising Sun Mill opens on Victoria Road in Romford. It was forced to close in 1840
+              when the new railway embankment cut off its wind supply. The mill closed in 1876.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1632 Section -->
+        <div class="card catevent catplace" id="1632">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1632 ~ Sun Inn
+            </h1>
+            <p class="timeline-p">
+              Sun Inn, London Road, Romford built by William Grafton. Until rebuilt in the 1930s,
+              it was probably the oldest inn in the district.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1638 Section -->
+        <div class="card catevent catpeople catplace" id="1638">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1638 ~ Charles I at Royal Palace
+            </h1>
+            <p class="timeline-p">
+              Charles I was the last monarch to stay at the Royal Palace. He was traveling with
+              his mother, Maria de Medici, the Queen Mother of France. She saw the crumbling palace and refused to
+              stay
+              there, instead staying in Gidea Hall.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1657 Section -->
+        <div class="card catevent catpeople" id="1657">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1657 ~ William Derham FRS
+            </h1>
+            <p class="timeline-p">
+              Worcestershire-born William Derham was appointed Rector of St. Laurence's Church,
+              Upminster in 1689. He lived in the village until 1716, when he was made a Canon of Windsor, although he
+              remained
+              Rector until his death. In
+              addition to his ministerial, Derham served as the local physician and took a keen interest in science
+              and nature.
+              Derham made daily records of Upminster's weather in 1697-99 and 1704-05, researched bird migration, and
+              created a large museum of insects and birds at his rectory. Most famously, he accuratley estimated the
+              speed of
+              sound by
+              having friends fire shotguns at a distance and observing the interval between the the flash and the
+              arrival of the
+              sound. He is buried in the chancel of St. Laurence (although another source says Upminster churchyard),
+              however,
+              by his own request, no memorial was ever erected to him.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1665uc -->
+        <div class="card catevent catplace" id="1665uc">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1665 ~ Upminster Common Mill
+            </h1>
+            <p class="timeline-p">
+              Upminster Common Mill off Ivy Lodge Lane was a post mill that ceased trading circa 1880.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1665sp -->
+        <div class="card catevent catpeople" id="1665sp">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1665 ~ Samuel Pepys
+            </h1>
+            <p class="timeline-p">
+              Samuel Pepys was among those who moved to the area to escape the plague. Ninety
+              people lost their lives in the Romford area, and a Pest House was built in Collier Row.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1679 Section -->
+        <div class="card catevent catpeople" id="1679">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1679 ~ Ann Tipping
+            </h1>
+            <p class="timeline-p">
+              Ann Tipping (n&eacute;e Cheke) was an educationalist who founded the school in Havering
+              village in 1724 that bears her name. She is buried at St. John the Evangelist Church,
+              Havering-atte-Bower.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1680 Section -->
+        <div class="card catevent catplace" id="1680">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1680 ~ King's Head, Hornchurch
+            </h1>
+            <p class="timeline-p">
+              The King's Head Inn at Hornchurch is built. Not the oldest pub in the area, but the
+              oldest still in its original building. In 2007 it turned into a restaurant.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1696 Section -->
+        <div class="card catevent catpeople" id="1696">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1696 ~ General James Oglethorpe (1696-1785)
+            </h1>
+            <p class="timeline-p">
+              Founder of the American state of Georgia in 1731. Retired to Cranham Hall.
+              Oglethorpe gained his early experience as a soldier through a commission abroad. He then proved to be a
+              shrewd campaigner on behalf of imprisoned debtors and in 1732 crossed the Atlantic to found the new
+              colony of
+              Georgia. A home for worthy but poor settlers, this would also provide a buffer for South Carolina
+              against Florida,
+              then
+              held by the Spanish. He rejected slavery in his new colony and even brought a group of Cherokee to meet
+              George II
+              in
+              1735. Back in England again in 1743, he rose through the ranks, fighting against the Jacobites in the
+              rebellion of
+              1745.
+              He married the heiress of Cranham Hall in 1743 and spent his long retirement there, during which time he
+              became a
+              celebrity in London society
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1700 Section -->
+        <div class="card catevent catplace" id="1700">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1700 ~ High House Farmhouse
+            </h1>
+            <p class="timeline-p">
+              Corbets Tey &ndash; Grade 2* listed building
+            </p>
+            <br>
+            <div class="link-container">
+              <a href="https://historicengland.org.uk/listing/the-list/list-entry/1079867?section=official-list-entry">
+                High House - Historic England
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1707 Section -->
+        <div class="card catevent catplace" id="1707">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1707 ~ Dagenham Breach
+            </h1>
+            <p class="timeline-p">
+              Although there had been flooding from the Thames on to the flood plains of South Hornchurch and
+              Rainham, notably in 1376, 1594 and 1621,
+              the inundation on 29th October created a lasting breach covering 1000 acres. This was partially down to
+              the
+              breaking of a
+              sluice controlled by the
+              marsh-bailiff, Edward Osborne. The Commissioners of the Levels attempted to close it, but all efforts were
+              in vain until
+              (coincidentally) 29th
+              October, 1713. However, on 15th February, 1714 another storm broke through. The Breach was now about 25
+              feet deep at Low
+              Water Mark and
+              250 feet wide, so an Act of Parliament was passed on 14th July 1714, charging tolls on all passing vessels
+              to help defray
+              costs. Captain John Perry
+              began work in 1716 and on 4th September 1717 had stopped the Breach, only to have it washed away on 10th
+              the work was finally completed
+              in June 1720, having cost £40,000, but a stretch of water covering 40 acres remained until 1887 when
+              Samuel Williams
+              began to develop the site
+              for Dagenham Dock.
+
+            </p>
+            <br>
+            <div class="copyright-text">
+              © The Past Revealed by Ian Wilkes, published by Havering Museum Ltd.
+            </div>
+          </div>
+        </div>
+
+        <!-- 1724 Section -->
+        <div class="card catevent catplace" id="1724">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1724 ~ Dame Tipping School
+            </h1>
+            <p class="timeline-p">
+              Dame Tipping School founded by Anne Tipping in 1724. It was rebuilt in 1837 and
+              again in 1891.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1729 Section -->
+        <div class="card catevent catplace" id="1729bh">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1729 ~ Bower House
+            </h1>
+            <p class="timeline-p">
+              Originally named Monthavering it was designed by Henry Flitcroft. Bower House,
+              Orange Tree Hill, is a mansion built in 1729 for John Baynes, Serjeant-at-Law, (a high ranking
+              barrister),
+              using stone quarried from the ruins of Havering Palace, including an angel bust corbel stone bearing the
+              arms of
+              Edward III.
+              It is now a Christian training centre.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1729 Section -->
+        <div class="card catevent catplace" id="1729rh">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1729 ~ Rainham Hall
+            </h1>
+            <p class="timeline-p">
+              was built in 1729 for Captain John Harle. A National Trust property since 1949 but
+              only opened to the public in 2015.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1760 Section -->
+        <div class="card catevent catpeople" id="1760">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1760 ~ Elizabeth Balls - Goat Woman of Havering
+            </h1>
+            <p class="timeline-p">
+              Elizabeth lived in Ivy Holt Cottages sometimes there were upwards of 50 goats living
+              with her. Her 'family' in 1815 consisted of 14 goats, 2 sheep, 17 fowls and a French dog.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1784 Section -->
+        <div class="card catevent catplace" id="1784">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1784 ~ Wedlake's (Iron) Foundry
+            </h1>
+            <p class="timeline-p">
+              Wedlake's (Iron) Foundry was founded by Thomas Wedlake
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1789 Section -->
+        <div class="card catevent catplace" id="1789">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1789 ~ Hornchurch Brewery
+            </h1>
+            <p class="timeline-p">
+              Hornchurch Brewery, Church Hill, was founded by John Woodfine on the site of 16th
+              century Hornchurch Lodge. It owned 36 local pubs including the King's Head and Bridge House. In 1874 it
+              was
+              brought by Henry and Benjamin
+              Holmes, they sold it in 1889 to Charles Dagnall who turned it into a limited company named Old
+              Hornchurch Brewery
+              Company,
+              but this went into liquidation. In 1892 Philip Conron bought it from the Official Receiver and after his
+              death it
+              was run
+              by Stanislaus Conron until 1925 when it was purchased by Mann Crossman for the licensed
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1792 Section -->
+        <div class="card catevent catplace catsport" id="1792">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1792 ~ Round House
+            </h1>
+            <p class="timeline-p">
+              Built in Broxhill Road, it was designed as a massive tea caddy for William Sheldon
+              by John Plaw.
+            </p>
+            <br>
+            <div class="link-container">
+              <a href=" https://www.pembertonroses.org.uk/history-of-havering-atte-bower">
+                History of Havering-atte-Bower from Pemberton Rose Garden website
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 1795 Section -->
+        <div class="card catevent catpeople" id="1795mj">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1795 ~ Mendoza v Jackson bare knuckle-fight
+            </h1>
+            <p class="timeline-p">
+              A prize fight worth 400 guineas took place in Millfield, Hornchurch between Daniel
+              Mendoza (aka Mendoza the Jew / Star of Israel) and "Gentleman" John Jackson. The contest was won by
+              Jackson after 9 rounds.
+            </p>
+            <div class="link-container">
+              <a href="https://en.wikipedia.org/wiki/John_Jackson_(English_boxer)">
+                John Jackson - Wikepedia
+              </a>
+              <br>
+              <a href=" https://boxrec.com/media/index.php/John_Jackson">
+                John Jackson - Boxrec
+              </a>
+              <br>
+              <a href="https://en.wikipedia.org/wiki/Daniel_Mendoza">
+                Daniel Mendoza - Wikepedia
+              </a>
+              <br>
+              <a href=" https://www.eastlondonhistory.co.uk/daniel-mendoza-bethnal-green/">
+                Daniel Mendoza - East London History website
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 1795 Section -->
+        <div class="card catevent catplace" id="1795rb">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1795 ~ Romford Barracks
+            </h1>
+            <p class="timeline-p">
+              Romford Barracks were established for six troops of horses in London Road, extending
+              south Road(later Waterloo Road)., during the war with France. They were demolished in 1825
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1799 Section -->
+        <div class="card catevent catplace catpeople" id="1799">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1799 ~ Edward Ind takes over Star Inn
+            </h1>
+            <p class="timeline-p">
+              Edward Ind takes over the Star Inn in Romford.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1800 Section -->
+        <div class="card catevent catplace" id="1800">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1800 ~ The Old Chapel, Upminster
+            </h1>
+            <p class="timeline-p">
+              is a Grade II listed building. Built by Samuel Hammond it was originally known as
+              the
+              "Christian Church of Protestant Dissenters"
+            </p>
+            <figure class="centered-figure">
+              <img src="images/1800-OldChapel.jpg" width="300" alt="The Old Chapel, Upminster">
+              <figcaption>
+                The Old Chapel, Upminster </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- 1803 Section -->
+        <div class="card catevent catplace " id="1803">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1803 ~ Upminster windmill
+            </h1>
+            <p class="timeline-p">
+              The Upminster Windmill building started by farmer James Noakes in 1803, this English smock mill is a Grade
+              II* listed building.
+            </p>
+            <br>
+            <figure class="centered-figure">
+              <img src="images/1803-UpminsterWindmill.png" width="300" alt="Upminster Windmill">
+              <figcaption>
+                Upminster windmill </figcaption>
+            </figure>
+            <div class="link-container">
+              <a href="https://www.upminsterwindmill.org/history">
+                History of Upminster windmill
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 1810 Section -->
+        <div class="card catevent catplace " id="1810fi">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1810 ~ Fairkytes ironworks foundry
+            </h1>
+            <p class="timeline-p">
+              Fairkytes ironworks foundry was opened by brothers Thomas &amp; Robert Wedlake. The
+              foundry was situated in
+              Billet Lane on what is now the green alongside the Queen's Theatre.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1810 Section -->
+        <div class="card catevent catplace" id="1810cr">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1810 ~ Collier Row Mill
+            </h1>
+            <p class="timeline-p">
+              Collier Row Mill was west of Lawns Way, off Chase Cross Road. It was a post mill
+              that
+              ceased trading
+              around
+              1860.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1818 Section -->
+        <div class="card catevent catplace" id="1818">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1818 ~ Dagenham to Collier Row canal
+            </h1>
+            <p class="timeline-p">
+              The first of a series of proposals for a canal following the Thames via Dagenham
+              Dock
+              by the River Beam and across to Collier Row. Further proposals were made in 1820, 1824 and 1875. All
+              sought to bring coal and manure to the area and take back goods and beer.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1833 Section -->
+        <div class="card catevent catpeople" id="1833">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1833 ~ Thomas Lewis Wilson
+            </h1>
+            <p class="timeline-p" style="text-align: center; font-weight: bold;">
+              1833-1919
+            </p>
+            <p class="timeline-p">
+              Thomas Lewis Wilson was the first published author of a book
+              specifically about any of the towns
+              and villages in Havering, with his <b>Sketches of Upminster</b> in 1856. He followed this in 1881 with
+              the
+              illustrated <b>History and Topography of Upminster</b>. His books and research papers have been a major
+              resource and inspiration for local historians
+              in the district ever since.</p>
+            <br>
+            <div class="copyright-text">
+              © Simon Donoghue - Havering Local Studies Library
+            </div>
+          </div>
+        </div>
+        <!-- 1835 Section -->
+        <div class="card catevent catcollection" id="1835">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1835 ~ Dry goods measures
+            </h1>
+            <p class="timeline-p">
+              Dry goods measures for Liberty of Havering. Inscribed "Thomas
+              Mashiter Esq. High Steward .... Dated 1835
+            </p>
+            <br>
+            <figure class="centered-figure">
+              <img src="images/1835-drygoodsmstandards.jpg" width="300" alt="Dry goods measures">
+              <figcaption>
+                Dry goods measures
+              </figcaption>
+            </figure>
+            <div class="romhm-text">
+              Havering Museum Collection ~ ROMHM:2010:.282
+            </div>
+          </div>
+        </div>
+        <!-- 1838 Section -->
+        <div class="card catevent catplace" id="1838">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1838 ~ Romford Union Workhouse
+            </h1>
+            <p class="timeline-p">
+              Romford Union Workhouse, later Oldchurch Hospital, in Oldchurch Road, was built by
+              Francis Edwards in a long facade of
+              25 bays with bowed centres. Smaller ranges of workshops behind originally contained the cruciform
+              workhouse (demolished
+              in 1993); a standard design of the period, which allowed the segregation of inmates and their
+              observation
+              from the
+              Master's house in the centre. A separate gate lodge and two-storey block served the casual wards. The
+              chapel built in
+              1839, was destroyed by fire 1975. The site was cleared in 2007 to make way for housing.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1839 Section -->
+        <div class="card catevent catplace" id="1839">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1839 ~ Romford Railway Station
+            </h1>
+            <p class="timeline-p">
+              Romford Railway Station is opened in 1839, the last section of a line from Norwich to Devonshire Street,
+              near
+              Bethnal Green in London. This train was intended to take over from the 40 licensed stagecoaches that
+              were then running between London and Romford.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1845 Section -->
+        <div class="card catevent catplace" id="1845">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1845 ~ Corn Exchange
+            </h1>
+            <p class="timeline-p">
+              Built alongside the Golden Lion in Romford High Street by Harvey George it was later
+              reconstructed in 1861.
+              <br>
+              <b>
+                From the Havering Local Studies Library:
+                The Corn Exchange, High Street, Romford c. 1870
+              </b>
+              <br>
+              The Corn Exchange is prominent in this view of the High Street, Romford with the London and County Bank
+              and the premises
+              of Griggs visible looking past the exchange building.
+              On February 10th 1845, George Harvey, a Romford auctioneer announced a prize for the best and next best
+              designs and
+              plans for a new corn exchange in Romford Ten Guineas will be given for the most approved, and Five
+              Guineas
+              for the next
+              best designs and plans of a corn exchange to be built on the eligible site of the old Bank premises in
+              the
+              centre of the
+              Corn Market at Romford, pointing out the best conversion and appropriation of the present range of
+              buildings, with the
+              view of combining Lecture and Reading rooms, and Public Discussion and Assembly Hall, worthy of the
+              largest and most
+              improving market town in England. The premises may be seen at any time by application for the key at Mr.
+              Harvey George's
+              Office at Romford, where the Designs and Plans, with the owner's name, are to be delivered, sealed and
+              directed, New
+              Corn Exchange, Romford, for the Committee, on or before the First day of March next.
+              The bank in question was that of Johnson, Johnson and Mann which was bankrupted after it failed in June
+              1844- it had
+              taken over from another failed Romford bank, Joyner, Surridge and Joyner. The new Corn Exchange was
+              opened
+              for business
+              on Wednesday 5th November 1845.
+              The Essex Herald on 21st October 1845 reported on the new corn exchange and the opportunity to carry out
+              market business
+              in a covered room instead of the open street, as it has hitherto been. It goes on to provide a
+              description, the new
+              building is about 60 ft. by 34 ft.: the side walls are 22 ft in height which gives the room a noble
+              appearance, and the
+              building affords ample light by the roof being nearly all covered in with glass. The stands are arranged
+              on the best
+              principle we have seen; each desk is placed on a temporary platform, raised about 9 inches from the
+              floor
+              and is
+              enclosed (except in front) by a panelled partition, extending a few feet in front of the desk, so that
+              each stand is
+              secluded from the observation of others. A subscription room and other apartments are attached to the
+              exchange, the
+              floor of which being boarded, renders it suitable for every public appropriation. There will also be
+              showrooms opening
+              from the northern end of the exchange for the public exhibition of agricultural implements, and a sale
+              repository for
+              the disposal of property generally.
+              Arthur Cornell described the Corn Exchange as the principal Hall in the town for concerts, public
+              meetings
+              etc . It
+              was used by St Edward's Church for services whilst the new church was built in 1851, the Congregational
+              Chapel in 1883
+              after fire had damaged the church in South Street and in the First World War it was used by the YMCA and
+              for public
+              meetings of the Romford and District Workers' Association, soon to become the Romford Labour Party, and
+              for trade union
+              meetings.
+              Always in private hands, the Corn Exchange was enlarged in 1861. It was put up for sale in 1924 and
+              finally closed in
+              1931, though the building stood until partial demolition in 1968 to make way for the new Woolworth's in
+              the High Street,
+              then in 1972, the final part of the building, with the Exchange lettering exposed above the Curtess Shoe
+              Shop in its
+              final days.
+              The Corn Exchange Clock was displayed in Pearson's Jewellers for many years and on the demolition of
+              their
+              premises, the
+              clock was stored in the Central Library in Romford until the Havering Museum was opened in 2010. It was
+              refurbished for
+              the Havering Museum and is now on permanent display there.
+              <br>
+              Exchange Clock photographed in 2009 when it was stored in the Central Library in Romford. Pearson's
+              Jewellers had displayed the clock after the Corn Exchange closed and the Library stored it for around
+              forty years in
+              anticipation of a museum opening in the town. It was restored and unveiled as one of the permanent
+              display items when the Havering Museum opened on May 26th 2010.
+            </p>
+            <br>
+            <div class="copyright-text">
+              © Simon Donoghue - Havering Local Studies Library
+            </div>
+          </div>
+        </div>
+        <!-- 1848 Section -->
+        <div class="card catevent catpeople" id="1848">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1848 ~ Captain Samuel Davis (1848-1926)
+            </h1>
+            <p class="timeline-p">
+              When the First World War broke out, Samuel Davis had already been captain of
+              Romford's
+              first official fire brigade for
+              almost 25 years. He was co-founder, having gone into partnership with his fellow builder James Everett
+              Dowsing in 1890,
+              close to their premises in Mawney Road. Even though Romford was a large and growing town, the fire
+              brigade
+              numbered only
+              13 men, many of whom were initially recruited from Dowsing &amp; Davis' firm. The operated a water tank
+              with
+              a
+              hand pump, on
+              a cart pulled by a pair of horses borrowed from the council dustmen. They had a machine called a
+              quadricycle
+              (essentially two tandem bikes), with the rest of their equipment stored in container between the gears.
+              The brigade
+              attended one particularly notable incident during the First World War. On 14th September 1916, there was
+              a
+              terrific
+              explosion at the Rainham Chemical Works, formally the J.C. and J. Fields factory which manufactured
+              T.N.T.
+              The fire and
+              subsequent explosion was caused by an employee smoking in the room used for drying nitrate soda. Seven
+              people were
+              killed but Davis and his team rescued 69 injured workers. The explosion all but destroyed the factory,
+              blowing much of
+              it into the Thames. For their bravery, each member of Romford Fire Brigade was awarded an O.B.E. on 5th
+              July 1920.
+              Davis' descendants still own his medal and many of them were inspired to follow his example and join the
+              fire service.
+            </p>
+          </div>
+        </div>
+        <!-- 1850 Section -->
+        <div class="card catevent catcollection" id="1850ce">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1850 ~ Corn Exchange Clock
+            </h1>
+            <p class="timeline-p">
+              Currently on show in the Museum's <b>'Made in Havering Gallery'</b>. It has been renovated
+              and converted to run on electricity with a radio link to keep it accurate. The clock has a wooden face,
+              painted with corn and hops, and iron hands.ROMHM 2010:1007
+            </p>
+            <br>
+            <figure class="centered-figure">
+              <img src="images/1850-CornExchangeClock.jpg" width="300" alt="Corn Exchange clock at the Havering Museum">
+              <figcaption>
+                Corn Exchange clock at the Havering Museum
+              </figcaption>
+            </figure>
+            <div class="romhm-text">
+              Havering Museum Collection ~ ROMHM:2010:1007
+            </div>
+            <br>
+          </div>
+        </div>
+        <!-- 1850 Section -->
+        <div class="card catevent catplace" id="1850se">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1850 ~ The Church of St. Edward the Confessor
+            </h1>
+            <p class="timeline-p">
+              The Church of St. Edward the Confessor was consecrated by the Bishop of Rochester on the 19th September
+              1850, to the Virgin Mary and St. Edward. The architect was John Johnson, the church replaced a chapel
+              which dated
+              from 1410.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1851 Section -->
+        <div class="card catevent catplace" id="1851ph">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1851 ~ Pyrgo House built
+            </h1>
+            <p class="timeline-p">
+              1851 The architect Thomas Allason sent to Greece to study classical architecture for
+              inspiration. It was demolished in 1940.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1851 Section -->
+        <div class="card catevent" id="1851bs">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1851 ~ British School and National Schools
+            </h1>
+            <p class="timeline-p">
+              Hall Lane (now Station Road) Upminster open. From 1870 boys went to
+              the National School on the east side of the road, girls to the National on the west side. Upminster
+              Junior
+              Mixed School was opened in 1928. The British School was pulled down in 1936, the National surviving
+              until
+              1967.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1857 Section -->
+        <div class="card catevent catpeople" id="1857">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1857 ~ Alfred Bennet Bamford
+            </h1>
+            <p class="timeline-p">
+              Born in Stanley Lodge, Eastern Road, Romford. He was a water colour artist who
+              specialised in paintings of the Essex Countryside. Died 21st October 1939
+            </p>
+            <br>
+            <figure class="centered-figure">
+              <img src="images/1857-BamfordHarrow.jpg" width="300" alt="The Harrow, Hornchurch">
+              <figcaption>
+                The Harrow, Hornchurch
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- 1858 Section -->
+        <div class="card catevent  catplace" id="1858">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1858 ~ Victoria Flour Mill
+            </h1>
+            <p class="timeline-p">
+              The steam powered flour mill opened in 1858 on the corner of Victoria Road and South
+              Street. The site is now occupied by shops in what is now called 'Old Mill Parade'
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1864 Section -->
+        <div class="card catevent catpeople" id="1864">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1864 ~ Charles Thomas Perfect
+            </h1>
+            <p class="timeline-p">
+              Wrote "Hornchurch During the Great war" and other local history books.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1867 Section -->
+        <div class="card catevent catpeople" id="1867">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1867 ~ Sir Henry Pelly
+            </h1>
+            <p class="timeline-p">
+              Born in Upminster, Sir Henry Pelly came from a family of seafarers. In 1914 he was
+              given command of the battle cruiser
+              Tiger. However, he was dogged by problems, namely that the ship was unfinished and that the crew were
+              inexperienced.
+              This perhaps caused a blunder that almost lost the British the battle of Dogger Bank. Acting on
+              intelligence provided by
+              a wireless inter caption, Pelly and his ship were deployed as part of a squadron that engaged a German
+              raiding squadron
+              in the English Channel. Rear Admiral Beatty, the British commander signalled "engage
+              ship in the
+              enemy's line" (ships fought each over in parallel rows). This was misinterpreted by Pelly, who
+              was
+              second in line
+              after Beatty's ship. He helped attack the lead German ship instead, leaving the actual target, the
+              Moltke,
+              free to fire
+              on Beatty, whose ship, The Lion, was badly damaged as a result. Pelly was not the only captain to
+              misinterpret an order
+              that day, but his failure to pursue the German ships when they fled made him a target of an inquiry. He
+              was only saved
+              by the intervention of the First Lord of the Admiralty, Winston Churchill, who did not want to tarnish a
+              battle that had
+              ended in a British victory in spite of key mistakes. Pelly spent the rest of the war in relative
+              ignominy.
+              He was
+              removed from active service in 1916 and appointed commodore of the Royal Navy barracks in Portsmouth
+              where
+              he remained
+              for the rest of the war.
+            </p>
+             </div>
+        </div>
+        <!-- 1868 Section -->
+        <div class="card catevent catplace" id="1868">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1868 ~ Harold Wood Station and Goods Yard opens
+            </h1>
+            <p class="timeline-p">
+              The station remains open today but the goods yard closed on 4th October 1965. A line
+              ran from the goods yard to a brickworks on the site of Bates industrial estate. the buildings on
+              platform
+              1 (fast London line) date from the original station, the rest were rebuilt in the 1930s when it
+              increased
+              to four lines.
+            </p>
+          </div>
+        </div>
+        <!-- 1869 Section -->
+        <div class="card catevent catcollection" id="1869">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1869 ~ Cast Iron Boundary Marker
+            </h1>
+            <p class="timeline-p">
+              These boundary markers indicated the boundary of the marsh area overseen by the
+              Commissioners of Sewers. Sewers was used in the past refer to an open drain or ditch.
+            </p>
+            <br>
+            <figure class="centered-figure">
+              <img src="images/1869--boundarymarker.jpg" width="300" alt="Cast Iron Boundary Marker">
+              <figcaption>
+                Cast Iron Boundary Marker
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- 1870 Section -->
+        <div class="card catevent catplace" id="1870bs">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1870 ~ Boyd School
+            </h1>
+            <p class="timeline-p">
+              Richard Benyon, owner of Cranham Hall, gave the site and paid part of the building
+              costs for the school. It taught 115 pupils and had accommodation for Miss Boyd, the school mistress.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1870 Section -->
+        <div class="card catevent catpeople" id="1870ef">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1870 ~ Elizabeth Fry
+            </h1>
+            <p class="timeline-p">
+              nee Gurney, the Quaker social reformer, was born and died in East Ham, but spent
+              some
+              of her married like at Fairkytes, Billet Lane, Hornchurch. Her son Joseph, his wife and their eleven
+              children
+              lived at Fairkytes from 1870 to 1896.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1871 Section -->
+        <div class="card catevent catpeople" id="1871">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1871 ~ Frances Beatrice Bardsley
+            </h1>
+            <p class="timeline-p">
+              Born in Spitalfields, the daughter of the Rector. Became Headmistress of Romford
+              County High in 1906 based in a house in Eastern Road, Romford. The school moved to new premises in Heath
+              Park Road in 1910 and in
+              1935 they moved again to their present location in Brentwood Road.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1876 Section -->
+        <div class="card catevent catplace" id="1876rf">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1876 ~ Romford Football Club
+            </h1>
+            <p class="timeline-p">
+              The original Romford Football Club was established in 1876 and played in the old
+              Southern League.
+            </p>
+            <br>
+            <figure class="centered-figure">
+              <img src="images/1876-RomfordFClogo.png" width="300" alt="Romford Football Club logo">
+              <figcaption>
+                Romford Football Club logo
+              </figcaption>
+            </figure>
+            <br>
+          </div>
+        </div>
+        <!-- 1876 Section -->
+        <div class="card catevent catplace" id="1876gt">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1876 ~ Grey Towers
+            </h1>
+            <p class="timeline-p">
+              Grey Towers was built for Henry Holmes, the Hornchurch brewer. In a 50 acre park,
+              the castellated house was used as a
+              barracks for the Sportsmen's Battalion Rifles from November 1914 until 26th June 1915; the 26th
+              MiddlesexRegiment (the Navvies Battalion) was in occupation during November and December 1915; and it was
+              used as a
+              convalescent hospital for New Zealand forces for the rest of the war. Demolished in 1931, although its two
+              gatehouses survived
+              until the 1960s.
+            </p>
+            <div class="copyright-text">
+              © The Past Revealed by Ian Wilkes, published by Havering Museum Ltd.
+            </div>
+          </div>
+        </div>
+        <!-- 1877 Section -->
+        <div class="card catevent catplace" id="1877">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1877 ~ Wennington School
+            </h1>
+            <p class="timeline-p">
+              Wennington School was built in 1887 adjoining the church. Until then, children had
+              been taught in private houses, and in
+              a thatched cottage in Church Lane that had been owned by the churchwardens. The cottage has since been
+              demolished, and
+              the school was converted into three dwellings in 1966.
+            </p>
+          </div>
+        </div>
+        <!-- 1878 Section -->
+        <div class="card catevent catplace" id="1878">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1878 ~ St. John the Evangelist
+            </h1>
+            <p class="timeline-p">
+              St. John the Evangelist was built close to the site of the chapel of Havering Palace. It was by Basil
+              Champneys, an early example of the Arts and Crafts architecture of flint, with stone dressing.
+            </p>
+          </div>
+        </div>
+        <!-- 1879 Section -->
+        <div class="card catevent catpeople" id="1879">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1879 ~ Lady Edna Clarke Hall
+            </h1>
+            <p class="timeline-p">
+              Lady Edna Clarke Hall had been an outstanding pupil at the Slade school of Art. She
+              and her barrister husband lived in
+              the Great House, Hall Lane, Upminster from 1898: Sir William died in 1932. Her best known series of
+              paintings were
+              miscellaneous drawings mostly for Wuthering Heights in 1902, when she also painted Upminster Common. In
+              1971 there was a
+              retrospective exhibition covering 50 years of her career. Her paintings hang in the Tate Gallery,
+              Victoria
+              &amp; Albert Museum and British Museum.
+            </p>
+            <div class="copyright-text">
+              © The Past Revealed by Ian Wilkes, published by Havering Museum Ltd.
+            </div>
+          </div>
+        </div>
+        <!-- 1884 Section -->
+        <div class="card catevent catplace" id="1884">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1884 ~ Albert Road School
+            </h1>
+            <p class="timeline-p">
+              The school opened in 1884 catering for 354 pupils. From 1956 it was known as Manor
+              School until it closed on 31st August 2009.
+            </p>
+            <br>
+          </div>
+        </div>
+
+        <!-- 1886 Section -->
+        <div class="card catevent catplace" id="1886">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1886 ~ St. Leonard's Homes
+            </h1>
+            <p class="timeline-p">
+              St. Leonard's Homes were built on 86 acres of the Harrow Lodge estate by F J Smith for the Board of
+              Guardians of St.
+              Leonards, Shoreditch for £6,300. A self contained village was built and opened in 1889 to contain, in
+              addition to the
+              eleven cottages (eachhousing 30 children) and a school, an infirmary, swimming bath, bakery and
+              workshops. The
+              Children's Home was taken over by the London County Council in 1930 and in 1965 by the London Borough of
+              Tower Hamlets.
+              It was sold for residential development in 1984.
+            </p>
+            <br>
+            <div class="copyright-text">
+              © The Past Revealed by Ian Wilkes, published by Havering Museum Ltd.
+            </div>
+          </div>
+        </div>
+        <!-- 1888 Section -->
+        <div class="card catevent catplace" id="1888gf">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1888 ~ The River Rom Flood
+            </h1>
+            <p class="timeline-p">
+              The River Rom became a huge conduit of water, trapping innumerable families in
+              upstairs rooms. The
+              Ind Coope Brewery was inundated and up to 30,000 empty casks were swept downstream; three or four
+              hundred
+              kilderkins (18 gallon casks) of unbunged ale were also lost. The High Street was under 8 feet of water.
+              In
+              Romford about
+              one sixth of an average year's rain fell. There had been flooding in 1736 and 1841, but on a lesser
+              scale.
+            </p>
+            <div class="copyright-text">
+              © The Past Revealed by Ian Wilkes, published by Havering Museum Ltd.
+            </div>
+          </div>
+        </div>
+        <!-- 1888 Section -->
+        <div class="card catevent catplace" id="1888vh">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1888 ~ Victoria Cottage Hospital, Romford
+            </h1>
+            <p class="timeline-p">
+              Built on land donated by William Mashiter (1812-1890) of Priests Farm at a cost pf
+              &pound;1000 in commemoration of Queen Victoria's jubilee
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1889 Section -->
+        <div class="card catevent catpeople" id="1889">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1889 ~ Edward Hillman
+            </h1>
+            <p class="timeline-p">
+              Edward Hillman introduced the first motor coach service to the area. There were
+              scheduled stops in
+              Romford and neighbouring towns.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1892 Section -->
+        <div class="card catevent catpeople" id="1892">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1892 ~ Albert John Dyer
+            </h1>
+            <p class="timeline-p">
+              Albert John Dyer was the publican of the King's Head pub in Romford Market from at
+              least 1922, and an
+              Alderman of Romford Borough Council. While serving as Mayor of Romford from 1944-45, he presented St.
+              Edward's Church in the Market Place with a new clock and a set of new chimes. As Chairman of the London
+              Central
+              Board of Licensed Victuallers, Dyer was involved in the successful campaign to extend local licensing
+              hours which
+              made him very popular with the traders on Romford Market. The 1940s painting of him in the Havering
+              Museum
+              by D. S.
+              Russell (ROMHM:2010.5) checking his watch against a clock and smiling to himself as he enjoys a drink,
+              pays homage
+              to that campaign.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1894 Section -->
+        <div class="card catevent catplace" id="1894">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1894 ~ Romford Golf Club
+            </h1>
+            <p class="timeline-p">
+              Romford Golf Club occupies 100 acres previously part of Gidea Hall. The land was sold in the early
+              1890s with the club house opening in May 1894.
+            </p>
+            <br>
+            <figure class="centered-figure">
+              <img src="images/1894-Romfordgolfclublogo.png" width="300" alt=" Romford Golf Club logo">
+              <figcaption>
+                Romford Golf Club logo
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- 1898 Section -->
+        <div class="card catevent catplace" id="1898">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1898 ~ Romford Bowling Club
+            </h1>
+            <p class="timeline-p">
+              The Club was founded in1898 by William Goodchild, Snr when a three rink grass green
+              was laid on what later became the Kings Head Yard, Market Place, Romford.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1900 Section -->
+        <div class="card catevent catplace" id="1900">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1900 ~ The Mawney Road Public Baths
+            </h1>
+            <p class="timeline-p">
+              The Mawney Road Public Baths were built in 1900 and later modernised in 1937. They
+              closed to the public in
+              1974 and the building was demolished the following year.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1905 Section -->
+        <div class="card catevent catplace" id="1905">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1905 ~ Upminster Court
+            </h1>
+            <p class="timeline-p">
+              Designed in 1905 by Sir Charles Reilly for Arthur E. Williams, son of local shipping
+              and coal merchant Samuel Williams. The building was completed in 1906, after the Williams family moved
+              out it was used to house refugees in 1939.
+            </p>
+            <br>
+            <div class="link-container">
+              <a href="https://historicengland.org.uk/listing/the-list/list-entry/1079931?section=official-list-entry">
+                Upminster Court - Historic England website
+              </a>
+
+              <a href="https://upminsterhistory.net/2015/07/23/upminster-court-final-flourish-of-the-great-house/">
+                Upminster Court - Tony Benton's Upminster History Site
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 1910 Section -->
+        <div class="card catevent catplace" id="1910">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1910 ~ Squirrels Heath &amp; Gidea Park station opens
+            </h1>
+            <p class="timeline-p">
+              What is now Gidea Park station opened as Squirrels Heath &amp; Gidea Park, changed to
+              Gidea Park &amp; Squirrels Heath on 1st
+              October 1913. British Rail dropped the Squirrels Heath on 20th February 1969. This was the last station
+              opened by Great
+              Eastern Railway in response to competition from Midland Railway station at Emerson Park.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1911 Section -->
+        <div class="card catevent catplace" id="1911">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1911 -~ Romford Garden Suburb Exhibition
+            </h1>
+            <p class="timeline-p">
+              Between July 1910 and June 1911 a over 100 architects took part in a competition to
+              design houses and cottages. 159
+              houses were built for the exhibition organised by Sir Herbert Raphael MP. He invited the leading arts
+              &amp;
+              crafts
+              architects to design and build 4 bedroom houses and 3 bedroom cottages with cash prizes for the best
+              homes. 1909 - Plans
+              for a garden suburb, Gidea Park - were published as a competition to find an architect and builder who
+              could create two
+              classes of houses in this area: &pound;500 homes and &pound;375 cottages.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1913 Section -->
+        <div class="card catevent catpeople" id="1913">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1913 ~ PC Joseph Watts (Essex County Constabulary)
+            </h1>
+            <p class="timeline-p">
+              PC Joseph Watts (Essex County Constabulary) passed away on the 8th September 1913
+              from injuries sustained while
+              gallantly trying to stop a runaway horse in High Street, Romford on 27th August. A plaque to Constable
+              Watts was unveiled outside the Havering Museum on 13th September 2019
+            </p>
+            <br>
+            <figure class="centered-figure">
+              <img src="images/1913-JosephWatts.jpg" width="300"
+                alt="Unveiling of plaque at the Havering Museum in 2019">
+              <figcaption>
+                Unveiling of plaque at the Havering Museum in 2019
+              </figcaption>
+            </figure>
+            <br>
+          </div>
+        </div>
+        <!-- 1915 Section -->
+        <div class="card catevent catplace" id="1915">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1915 ~ Royal Flying Corp - Suttons Farm
+            </h1>
+            <p class="timeline-p">
+              Royal Flying Corp airfield at Suttons Farm, Hornchurch opened on 3rd October 1915
+              with
+              8 men and two BE2c aircraft. On
+              31st December 1919, farmer Tom Crawford took possession again as the base closed. In the meantime it had
+              been the
+              scourge of the airships that had attacked civilian targets, effectively eliminating them as an aerial
+              weapon. In July
+              1923 it was compulsory purchased by the air ministry for a new airstrip.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1916 Section -->
+        <div class="card catevent catpeople" id="1916lr">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1916 ~ William Leefe Robinson
+            </h1>
+            <p class="timeline-p">
+              William Leefe Robinson won the Victoria Cross on 2nd September 1916 by being the
+              first
+              airman to bring down a German
+              airship. He was a prisoner of war in Germany 1917-18 and succumbed to his bad treatment there after his
+              return to
+              England, to die in the Spanish flu epidemic.
+            </p>
+            <figure class="centered-figure">
+              <img src="https://www.haveringmuseum.org.uk/wp-content/uploads/2019/02/Leefe-Robinson.jpg" width="300"
+                alt="William Leefe Robinson">
+              <figcaption>
+                William Leefe Robinson
+              </figcaption>
+            </figure>
+
+          </div>
+        </div>
+        <!-- 1916 Section -->
+        <div class="card catevent catplace" id="ff1916ff">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1916 ~ Explosion at Fields Factory
+            </h1>
+            <p class="timeline-p">
+              At 2:57pm an explosion ripped through the Fields factory killing 7 men and injuring
+              80.
+              Formerly a manufacturer of soap and candles, Fields was taken over in 1914 by the War Department and
+              began
+              making a TNT
+              substitute called dinitrophenol.
+              At approximately 2:50pm a fire was discovered in the nitrate of soda drying room. Attempts were made to
+              put it out and
+              several workers started moving the barrels of explosives into the open, but works chemist said "that the
+              dinitrophenol
+              will explode directly". Captain Church, supervising the removal of the barrels, ordered everyone to get
+              away from them
+              and chased the workers off. At 2:57pm an explosion ripped through the Fields factory killing 7 men and
+              injuring 80. It
+              is thought the death toll would have been higher had it not been for Captain Church's actions.
+              The explosion was attended by several local fire brigades including Romford Fire Brigade led by Captain
+              Samuel Davis (
+              of Dowsing &amp; Davis Builders and Undertakers). They arrived with the factory well ablaze, "their
+              equipment
+              comprising wet
+              cloths to aid breathing, a whistle and a hank of rope to keep them together, enabled them to remove
+              twelve
+              young women
+              who all survived. Minutes later the factory was blown hundreds of feet into the River Thames".
+              Altogether
+              they rescued
+              69 people, for which six of the fire crew were awarded OBEs by the King.
+            </p>
+
+            Taken from Home Front Havering published by the Havering Museum. ISBN 978-0-9933523-0-0 available from the
+            Havering
+            Museum
+            <br>
+          </div>
+        </div>
+        <!-- 1917 Section -->
+        <div class="card catevent catplace" id="1917">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1917 ~ Murex Iron Foundry
+            </h1>
+            <p class="timeline-p">
+              Murex Ltd. were Iron founders &amp; ferroalloy manufacturers who arrived in Rainham in 1917, Murex, the
+              company which would come to
+              dominate Rainham's industrial waterfront in later years, moved to Rainham Ferry. Founded in 1909 in
+              Millwall, the start
+              of WW1 became a great opportunity for Murex to expand. Their work with tungsten and wolfram with
+              permission to
+              manufacture ferrotungsten and tungsten powder meant they needed new premises. A contract to smelt 600
+              tons
+              of tungsten
+              ore concentrate for munitions led them to purchase the site at Rainham next to the [damaged Fields
+              factory](https://www.tiki-toki.com/timeline/entry/1145867/Havering-Timeline/#vars!panel=11880958!) (see
+              14th September
+              1916) for &pound;60,000.
+              Taken from Home Front Havering published by the Havering Museum. ISBN 978-0-9933523-0-0 available from
+              the
+              Havering
+              Museum
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1920 Section -->
+        <div class="card catevent catpeople" id="1920pb">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1920 ~ Peter Blundell
+            </h1>
+            <p class="timeline-p">
+              Peter Blundell was a tramp who at one time lived in a sand bin on the A127 Southend
+              Arterial Road underneath the Hall
+              Lane flyover where he often displayed his paintings of ships. He was a very familiar sight in Romford
+              and
+              is renowned
+              for his paintings of ships on pieces of cardboard which he displayed outside the Central Library in St
+              Edward's Way,
+              Romford. An article in the Romford Recorder of 18th April 1975 includes a photograph of him clean shaven
+              during a stay
+              in Harold Wood Hospital. At the time of the article he was 55 years old and he had been in the hospital
+              for six weeks.
+              Doctors were appealing for a home for him and were reluctant to discharge him from hospital until he had
+              somewhere to
+              go. Mr Blundell was reported as saying "All I want to do is live for a long time. If that means retiring
+              from the road
+              then that's what I will have to do. I don't want to be a nuisance but I want to do what the doctor
+              advises". He was born
+              on January 10th 1920 in Norwich and was the second oldest in a family of four, with three sisters Mary,
+              Margaret and
+              Ann. He lived with his family in Billericay and Romford before joining the Merchant Navy - his father,
+              grandfather and
+              great-grandfather all served in the Royal Navy.; Henry, his father, retired as a lieutenant commander
+              and
+              was awarded an
+              MBE. Following a marriage which broke up he took to the road. On January 5th 1987 he was admitted to
+              Harold Wood
+              Hospital on the advice of London Borough of Havering Social Services staff after complaining of feeling
+              unwell. He had
+              twice refused medical help from social services and the police. Peter Blundell died on Wednesday January
+              23rd 1987 in
+              Harold Wood Hospital aged 67.&nbsp; His sister Margaret revealed that his family had often tried to get
+              him to live with
+              them but that he chose to live rough. She organised his funeral which was attended by family and people
+              who knew him
+              from Havering. His cremation took place at Chelmsford on 27th January and his ashes were buried in Stock
+              churchyard.
+            </p>
+            <br>
+            <figure class="centered-figure">
+              <img src="https://www.haveringmuseum.org.uk/wp-content/uploads/2018/10/PeterThe-Painter-cropped.jpg"
+                width="300" alt="Peter Blundell">
+              <figcaption>
+                Painting of Peter now hanging in the Havering Museum <br>
+              </figcaption>
+            </figure>
+            <div class="romhm-text">
+              Havering Museum Collection ~ ROMHM:2010:1007
+            </div>
+            <figure class="centered-figure">
+              <img src="https://www.haveringmuseum.org.uk/wp-content/uploads/2019/10/IMG_6207-Conway-cropped.jpg"
+                width="600" alt="Peter Blundell">
+              <figcaption>
+                The Conway - Painted in 1980 <br>
+                Donated by S J Hitchen<br>
+              </figcaption>
+            </figure>
+            <div class="romhm-text">
+              Havering Museum Collection ~ ROMHM:2010:1007
+            </div>
+            <br>
+            <div class="link-container">
+              <a href="https://videos.files.wordpress.com/tkDiVgeY/peterthepainterupminster-romford-tramp_mp4_dvd.mp4/"
+                class="center-text">
+                Aquarius - Interview with Peter Blundell
+              </a><br>
+
+              <a href="https://dreamsgatheringdust.com/2021/03/15/wealth-i-seek-not-hope-nor-love-remembering-peter-the-painter/"
+                class="center-text">
+                Article by Simon Farquhar
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 1920 Section -->
+        <div class="card catevent catplace" id="1920rw">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1920 ~ The Rainham War Memorial
+            </h1>
+            <p class="timeline-p">
+              was built in 1920 by a Mr. Vinton. It was unveiled by Colonel Sir Francis Douglas Charlton Whitmore
+              (1872 - 1962) on 7 November 1920.
+            </p>
+
+            <figure class="centered-figure">
+              <img src="https://www.haveringmuseum.org.uk/wp-content/uploads/2020/03/Rainham-War-memorial-opening©.jpg"
+                width="300" alt="Rainham War Memorial">
+              <figcaption>
+                Rainham War Memorial
+              </figcaption>
+
+            </figure>
+          </div>
+        </div>
+
+        <!-- 1921 Section -->
+        <div class="card catevent catplace" id="1921rl">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1921 ~ Royal Liberty School
+            </h1>
+            <p class="timeline-p">
+              Opened in the former Hare Hall as the Romford County School for Boys.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1922 Section -->
+        <div class="card catevent" id="1922">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1922 ~ Essex Sewer Commission Notice
+            </h1>
+
+            <figure class="centered-figure">
+              <img src="images/1922-EssexSewerCommission.jpg" width="300" alt="Essex Sewer Commission Notice">
+              <figcaption>
+              </figcaption>
+            </figure>
+            <div class="romhm-text">
+              Havering Museum Collection ~ ROMHM:xxx.yyy
+            </div>
+          </div>
+        </div>
+        <!-- 1924 Section -->
+        <div class="card catevent" id="1924">
+          <div class="card-body catplace">
+            <h1 class="timeline-h1">
+              1924 ~ Oldchurch Hospital
+            </h1>
+            <p class="timeline-p">
+              Oldchurch Hospital was built around the core of the Romford Union Workhouse. It was demolished in 2007.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1927 Section -->
+        <div class="card catevent catplace" id="1927">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1927 ~ Roome's Department Store
+            </h1>
+            <p class="timeline-p">
+              The original general store managed by James Roome opened 1888 in Green Street, Upton Park. The family
+              moved to
+              Upminster in 1906 and acquired the site in 1925 for a new shop which opened in 1927. The department
+              store continued to
+              expand around the original store in Station Lane.
+            </p>
+            <br>
+            <figure class="centered-figure">
+              <img src="images/1927-Roome.jpg" width="300" alt="Roome's Department Store">
+              <figcaption>
+                Roome's Department Store
+              </figcaption>
+            </figure>
+            <div class="link-container">
+              <a href="https://www.roomes.co.uk/about-us/156-our-heritage">
+                Roome's Department Store
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- 1928 Section -->
+        <div class="card catevent catpeople" id="1928ic">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1928 ~ Ivor Cameron
+            </h1>
+            <p class="timeline-p">
+              Ivor Cameron, a founder-member and long-serving Director of Havering Museum. Ivor
+              made invaluable contributions to the Havering Museum for many years, but also served the people of
+              Havering in various capacities since he
+              was to the Council in 1990 and represented Hacton Ward for 16 years before standing down in May 2006. As
+              a Councillor, Ivor
+              served on Havering's Corporate Services, Development and Transportation, Education, Environment and
+              Licensing and
+              Governance Committees. In 1996, Ivor was awarded a Paul Harris Fellowship by the Dagenham Rotary Club
+              for his tremendous services to the community. He also elected Mayor of Havering from 1996-1997.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1928 Section -->
+        <div class="card catevent catplace" id="1928rh">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1928 ~ RAF Hornchurch
+            </h1>
+            <p class="timeline-p">
+              RAF Hornchurch opened at Suttons Farm on 1st April 1928 under the command of Squadron
+              Leader Keith Park, to become one of the principal fighter bases for Sptifires in World War II. The base
+              closed on 9th April 1962.
+            </p>
+            <br>
+            <figure class="centered-figure">
+              <img src="images/1928-RAFHornchurchcrest.jpg" width="300" alt="RAF Hornchurch Crest">
+              <figcaption>RAF Hornchurch Crest </figcaption>
+            </figure>
+            <div class="romhm-text">
+              Havering Museum Collection ~ ROMHM:xxx.yyy
+            </div>
+          </div>
+        </div>
+        <!-- 1928 Section -->
+        <div class="card catevent catplace" id="1928ma">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1928 ~ Maylands Aerodrome
+            </h1>
+            <p class="timeline-p">
+              In 1928, Mr A H Matthews leased the land as a private landing strip for his own
+              plane
+              and the 4 planes owned by Inland
+              Motor Services Ltd. From 1931 to 1934 the airfield was the base of Hillman's Airways but they soon
+              outgrew
+              the airfield
+              and moved to Stapleford Tawney. in 1936 it was sold to a consortium for a proposed golf course but
+              continued to operate
+              as an airfield for another 4 years. At one time it was the only permanent aerodrome in Essex. on 6th
+              February 1940 the
+              aerodrome was burnt to the ground, allegedly during a German Air Raid ....but other theories as to the
+              cause of the fire
+              exist. From the this date it ceased to operate as an airfield and with the exception of an emergency
+              landing by a
+              Hurricane low on fuel on the 18th October 1940. After the war Maylands Golf Course was developed on the
+              land of the
+              former airfield. Information taken from MAYLANDS AERODROME 1928-40 by Anthony Philpot. Available from
+              Havering Museum
+              &pound;7.95 tells the full story of Maylands Aerodrome.
+              Havering Museum Collection
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1929 Section -->
+        <div class="card catevent catplace" id="1929cc">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1929 ~ Capitol Cinema, Upminster
+            </h1>
+            <p class="timeline-p">
+              OnOn the corner of St. Mary's Lane and Tudor Gardens the Capitol opened on 10th
+              October 1929. April 1937 taken over by
+              Eastern Cinemas. 28th February 1943 taken over by the Odeon chain. 19th August 1946 renamed Odeon 29th
+              August 1949
+              renamed the Gaumont after being taken over by the Rank Organisation. 15th July 1961 ceases to be a
+              cinema.
+              1973 the
+              building finally closes for good after being Top Rank Bingo Club since it stopped being a cinema. The
+              site
+              was rebuilt
+              in 1974 as a supermarket and went from Wallis to Somerfield to Waitrose (2015).
+            </p>
+
+          </div>
+        </div>
+        <!-- 1929 Section -->
+        <div class="card catevent catplace" id="1929hr">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1929 ~ Havering Road Infants School
+            </h1>
+            <p class="timeline-p">
+              Opened as Havering Road Infants School from 1929 -1931. It under went various name
+              changes during the years and was know
+              variously as Havering Road Mixed Junior School, Havering Road County Primary School and it became
+              Parklands Infant and
+              Junior Schools in 1957.
+              These extracts of text have been taken directly from the Junior School's log books which were
+              handwritten
+              and start in 1931 and run through till the early 1980s.<br></p>
+            <p>
+              1931 - 31st August ... Havering Road Junior Mixed opened at 9am by Acting Head Teacher Mary McCarthy.
+              188
+              children were
+              transferred from the Infants Dept, there were 4 teachers. No new scholars were admitted as the school
+              furniture had not
+              arrived.<br>
+              1939 - 29th August ... Air raid shelters are being constructed in the playing field.<br>
+              1939 - 3rd September ... Owing to the outbreak of hostilities school is closed for 1 week in accordance
+              with Goverment
+              broadcast instructions.<br>
+              1940 - 13th November ... The school was struck by 2 high explosive bombs. They did considerable damage
+              and
+              rendered the
+              building unfit for use.<br>
+              1940 - 25th November ... School reopened after the bombing although the absence of artificial lighting
+              cause
+              difficulties.<br>
+              1942 - 1st July ... The iron railings seperating the ashpalt playground from the playing field were
+              removed for the war
+              effort.<br>
+              1944 - 19th April ... At 1:10am the school premises received a shower of enemy bombs, some ordinary
+              incendiary and other
+              explosive incendiary. The fire watchers on duty, The Head Master, Miss G.H. Jones and Miss J. Jones
+              succeeded in
+              extinquishing one in the passage to the ladies lavatories and also putting out a fire which had started
+              in
+              the Infants'
+              Classroom No.9. Two other explosive incendiaries had struck the Hall, pierced the platform and ignited a
+              number of forms
+              stored beneath it. This fire was tackled by two stirrup pump parties who had arrived to assist, but
+              efforts to prevent
+              it spreading proved unavailing and the N.F.S. was summoned. The fireman managed to confine the fire to
+              the
+              Hall which
+              however was completely gutted. The Head Master wishes to place on record the splendid assistance
+              rendered
+              by the Misses
+              Jones, particularly Miss G. Jones in backing up his efforts under trying circumstances - the corridor
+              being filled with
+              smoke- in attempting to save the building from destruction. School closed due to damage. ( N.F.S. is
+              National Fire
+              Service)
+              1944 - 24th April ... School re-opened. During the weekend the A.R.P. personnel removed 52 unexploded
+              bombs.
+              <br>
+              1944 - 22nd June ... Attendance this week was only 37.2% due to frequent air raid warnings on account of
+              pilotless
+              planes.
+              <br>
+              1944 - 11th July ... Registration for evacuation took place today. 62 mothers, 82 children under 5 and
+              265
+              children over
+              5 have been registered.
+              <br>
+              1944 - 14th July ... Evacuation of mothers and children took place. The Head Master and 13 members of
+              staff accompanied
+              them to Beccles, Suffolk.
+              <br>
+              1944 - 29th August ... School reopened after summer holidays but owing to evacuation and flying bombs
+              only
+              194 children
+              were present.
+              <br>
+              1944 - 16th November ... At 7:40am the school was considerably damaged by enemy action.
+              <br>
+              1944 - 28th November ... Air raid shelter No.1 had over 2 foot of water in it and the pumps in No3
+              shelter
+              require
+              attention.
+              <br>
+              1945 - 5th March ... Shelters 1 and 5 unusable on account of flooding.
+              <br>
+              1945 - 8th May ... V.E. Day. The war in Europe having come to a victorious end by the surrender of
+              Germany
+              has brought
+              into operation the plans already made for Peace celebrations. The school has therefore been closed for
+              this and the two
+              following days.
+              <br>
+              1942 -1st September ... 227 pupils admitted from the Infants Dept. 207 transferred to Pettits Senior
+              School (now
+              Marshalls Park)
+              <br>
+              1950 - 4th September ... School reopens with 802 pupils in 20 classes
+              <br>
+              1951 - 5th Sepember .... School reopens with 851 pupils in 20 classes
+              <br>
+              1952 - 3rd September ... School being redecorated internally for first time since it was built.
+              <br>
+              1952 - 8th September ... Start of new school year 894 pupils in 21 classes. Classes range in size from
+              33
+              to 48 pupils,
+              the smaller clases are for "backward pupils"
+              <br>
+              1952 - 3rd October ... Considerable area of playground being resurfaced which is causing a great deal of
+              inconvenience,
+              it should have been done during holidays.
+              <br>
+              1953 - 31st August ... Mr E.R. Bird retires as Head Master after almost 20 years in the school.
+              <br>
+              1953 - 20th January ... Only 598 pupils present in the afternoon due to dense fog.
+              <br>
+              1953 - 1st September ... Mr Eric Beanse commenced duty as Headmaster
+              <br>
+              1953 - 4th September ... Start of new school year 902 pupils in 21 classes. Miss G. Jones Senior
+              Mistress.
+              <br>
+              1956 - 5th September ... Start of new school year 805 pupils in 21 classes. Rise Park school just opened
+              so pupil
+              numbers were reduced by approximately 80.
+              <br>
+              1957 - 4th September ... Start of new school year 724 pupils in 19 classes. Miss G. Jones Deputy Head.
+              Class sizes range
+              from 27 to 47 pupils.
+              <br>
+              1958 - 3rd September ... Start of new school year 628 pupils in 16 classes. Class sizes range from 30 to
+              46 pupils.
+              <br>
+              1961 - 6th September ... Start of new school year 591 pupils in 14 classes. Class sizes range from 34 to
+              47pupils.
+              <br>
+              1967- 4th Jan ... Mr John Hughes starts as Headmaster.
+              <br>
+              1970 - September ... Main furnace changed to oil.
+              <br>
+              1971 - August ... Coke fires in Verandah replaced by gas fires.
+              <br>
+              1972 - August ... 2 demountable classrooms erected but could not be used at start of term because there
+              was no
+              furniture.
+              <br>
+              1972 - 12th September ... Start of new school year 576 pupils in 16 classes.
+              <br>
+              1973 - 4th September .. Start of new school year 536 pupils in 16 classes.
+              <br>
+              1973 - 4th September ... The old wooden building is demolished (Not sure what this refers to, will try
+              and
+              find out
+              ....Mr Johnson)
+              <br>
+              1973 - 17th December ... Ceremonial Oak Tree planted (a pencilled note mentions that it didn't survive
+              the
+              winter, no
+              mention of why it was planted)
+              <br>
+              1974 - 3rd September ... Start of new school year 541 pupils in 16 classes.
+              <br>
+              1975 - 2nd September ... Start of new school year 531 pupils in 16 classes.
+              <br>
+              1976 - 7th September ... Start of new school year 516 pupils in 16 classes.
+              <br>
+              1977 - 6th September ... Start of new school year 496 pupils in 16 classes.
+              <br>
+              1978 - 21st July ... Deputy Headmistress, Miss Gladys Jones retired after 43 years of loyal service.
+              <br>
+              1978 - 5th September ... Start of new school year 487 pupils in 16 classes.
+              <br>
+              1979 - 4th September ... Start of new school year 462 pupils in 16 classes.
+              <br>
+              1980 21st April ... Conversion, part Headteacher's room/secretaries room. Secretaries room to sick
+              bay.
+              <br>
+              1980 21st April ... No school milk, Education Act.
+              <br>
+              1980 - 28th April ... School meals 50p (106 meals, 176 packed lunch)
+              <br>
+            </p>
+          </div>
+        </div>
+        <!-- 1930 Section -->
+        <div class="card catevent catpeople" id="1930">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1930 ~ Kenny Ball
+            </h1>
+            <p class="timeline-p">
+              Jazz trumpeter and band leader Kenneth Ball was born in Ilford, and moved moved to
+              Emerson Park in 1968, where he lived
+              for many years. His band, 'Kenny and his Jazzmen' performed regularly at the Queens Theatre in
+              Hornchurch
+              and had a
+              string of hits including Samantha, Midnight in Moscow, and When I'm Sixty-Four. In 1981, they performed
+              at
+              Buckingham
+              Palace for the wedding reception of the Prince and Princess of Wales, which Kenny described as the peak
+              of
+              his career.
+              Kenny's last appearance with his band was in Germany in JAnuary 2013; he died of pneumonia two months
+              later. His son
+              Keith has now joined the band as its lead singer to keep the Jazzmen legacy alive.
+            </p>
+          </div>
+        </div>
+        <!-- 1932 Section -->
+        <div class="card catevent catpeople" id="1932">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1932 ~ Ian Wilkes
+            </h1>
+            <p class="timeline-p">
+              Married to Pamela, Ian formed Friends of Havering Museum in 2000 to start the
+              campaign
+              to launch Havering Museum. With
+              Pamela, as company secretary, the group successfully gained Heritage Lottery Funding for almost
+              &pound;1million
+              and then
+              arranged an agreement with Havering Borough Council to take over part of the old Romford Brewery
+              Building
+              in the High
+              Street. It was a proud day for Ian when he officially opened the Museum on 26th May 2010. Ian was
+              Chairman
+              of the Board
+              of Directors until 2014 when he stood down through ill-health. Apart from his strong association with
+              the
+              Museum, Ian
+              was a successful author and publisher. In 2013 he received a Civic Award from the Mayor in recognition
+              of
+              his long and
+              dedicated service to the Borough. He was also Chairman of Romford and District Historical Society,
+              Chairman of the
+              Chameleons Drama Group, a Governor of Frances Bardsley and several other local Schools and served two
+              terms as an
+              elected Councillor for the Residents' Association. Ian leaves Pamela and four sons and an enormous
+              legacy
+              both at
+              Havering Museum and the Borough to be proud of.
+            </p>
+          </div>
+        </div>
+        <!-- 1934 Section -->
+        <div class="card catevent catplace" id="1934hw">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1934 ~ Harold Wood Cricket Club
+            </h1>
+            <p class="timeline-p">
+              In 1934 Edward Bryant, a local landowner, donated a field to the Hornchurch Urban
+              District Council on the condition that it would be used for cricket.
+            </p>
+           </div>
+        </div>
+        <!-- 1934 Section -->
+        <div class="card catevent catplace" id="1934ub">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1934 ~ Upminster Bridge Underground Station
+            </h1>
+            <p class="timeline-p">
+              Upminster Bridge Underground Station is opened. The station on what is now the
+              Distric Line was opened on 17th December 1934 by the
+              London, Midland and Scottish Railway. The name was chosen by survey over the alternative "Minster Way."
+            </p>
+          </div>
+        </div>
+        <!-- 1935 Section -->
+        <div class="card catevent catplace" id="1935tc">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1935 ~ Towers Cinema (later Odeon Hornchurch)
+            </h1>
+            <p class="timeline-p">
+              With seating for almost 1800 the cinema was built for David James and designed by
+              Edward Kemp &amp; Frederick Tasker. The
+              cinema included a small stage and a 200 seat ball room and cafe on the first floor. It was sold in 1937
+              to
+              Eastern
+              Cinemas Ltd. in 1937who sold it on to the Odeon chain in 1943. It closed as a cinema in 1973 and was
+              converted into a
+              bingo hall which remained open till 2015. In April 2017 it was demolished to make way for a supermarket
+              which was built
+              on the site.
+            </p>
+          </div>
+        </div>
+        <!-- 1935 Section -->
+        <div class="card catevent catplace" id="193ep">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1935 ~ Elm Park Garden Suburb Underground Station
+            </h1>
+            <p class="timeline-p">
+              1935 - Elm Park Garden Suburb Underground Station is opened, to serve a "country
+              town" of 7,000 homes.
+            </p>
+          </div>
+        </div>
+        <!-- 1936 Section -->
+        <div class="card catevent catplace" id="1936">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1936 ~ Havanah Cinema (later Odeon Romford)
+            </h1>
+            <p class="timeline-p">
+              Opening on 29th January 1936 the cinema w designed by Edward kemp and Frederick
+              Tasker. It was sold to Eastern Cinemas
+              Ltd in April 1937 and then on to the Odeon chain in 1943. It changed it's name to the Odeon on 28th
+              November 1949. In
+              1974 it was converted to a 3 screen complex but finally closed on 8th July 1990 with a new 8 screen
+              cinema
+              opening in
+              the nearby Liberty 2 shopping centre. Following the closure as a cinema it became a venue for the
+              Laserquest game for a
+              period but then remained empty till 1999 when it became 2 night clubs, Time and Envy, these later became
+              Fiction and
+              Cameo.
+            </p>
+            <br>
+          </div>
+        </div>
+        <!-- 1937 Section -->
+        <div class="card catevent catplace" id="1937">
+          <div class="card-body">
+            <h1 class="timeline-h1">
+              1937 ~ Cheetah Racing at Romford Greyhound Stadium
+            </h1>
+            <p class="timeline-p">
+              In an attempt to increase attendance at the race meetings cheetah racing was
+              introduced to the crowds at Romford
+              greyhound Stadium by Arthur Leggett. In the first race at Romford to feature cheetahs, Helen, a female
+              cheetah easily
+              won against the greyhounds . With a track record of 15.86 seconds to cover the 355 yards at around 55mph
+              she left the
+              dogs behind her. In the long run the cheetahs proved a bit unreliable at chasing the hare and these
+              novelty races didn't
+              continue for long.
+              Sport
+            </p>
+          </div>
+        </div>
+
+        <!-- 1938 Section -->
+        <div class="card catevent catplace" id="1938">
+          <div class="card-body">
+            <h1 class="timeline-h1">1938 ~ Hornchurch Hoard</h1>
+            <p class="timeline-p">
+              The Hornchurch Hoard of 448 silver coins was discovered in 1938 opposite St. Andrew's Church
+              in Hornchurch. The hoard, which was probably deposited around 1265, contained a total of 448
+              coins dating from 1223 — 411 of which were of the voided long cross series of Henry III, with
+              the remainder being Scottish, Irish, short cross, and forged coins.
+            </p>
+
+            <div class="image-row">
+              <figure class="image-col">
+                <img src="images/1938-HornchurchHoard1.jpg"
+                  alt="A selection of silver coins from the 1938 Hornchurch Hoard discovery" height="300">
+                <figcaption>Havering Hoard - selection of coins</figcaption>
+              </figure>
+
+              <figure class="image-col">
+                <img src="images/1938-HornchurchHoard2.jpg"
+                  alt="Close-up view of Henry III voided long cross coins from the Hornchurch Hoard" height="300">
+                <figcaption>Havering Hoard - close-up of coins</figcaption>
+              </figure>
+
+              <figure class="image-col">
+                <img src="images/1938-HornchurchHoard3.jpg"
+                  alt="Display of Hornchurch Hoard coins at the Havering Museum" height="300">
+                <figcaption>Havering Hoard - museum display</figcaption>
+              </figure>
+            </div>
+            <div class="romhm-text">
+              Havering Museum Collection ~ ROMHM:xxx.yyy
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 1942 Section -->
+        <div class="card catevent catcollection" id="1942ww">
+          <div class="card-body">
+            <h1 class="timeline-h1">1942 ~ Warship Week</h1>
+            <p class="timeline-p">
+              Warship Week in February 1942 saw local communities raise funds to pay for building warships.
+              These communities then 'adopted' the ships, writing letters to crews and sending them knitted
+              balaclavas, gloves, and socks. The crews would also pay visits in return. Romford sponsored
+              HMS Raider and Hornchurch adopted HMS Hurricane.
+            </p>
+            <div class="image-row">
+              <figure class="image-col">
+                <img src="https://www.haveringmuseum.org.uk/wp-content/uploads/2025/10/a0120007-282x300.jpg"
+                  alt="HMS Hurricane" width="282" height="300">
+              </figure>
+              <div class="romhm-text">
+                Havering Museum Collection ~ ROMHM:xxx.yyy
+              </div>
+
+              <figure class="image-col">
+                <img src="https://www.haveringmuseum.org.uk/wp-content/uploads/2025/10/a0100007-261x300.jpg"
+                  alt="HMS Raider" width="261" height="300">
+                <figcaption>
+                  HMS Raider<br>
+                </figcaption>
+              </figure>
+              <div class="romhm-text">
+                Havering Museum Collection ~ ROMHM:xxx.yyy
+              </div>
+            </div>
+            <div class="link-container">
+              <a href="https://www.naval-history.net/xGM-Chrono-10DD-53R-HMS_Raider.htm">HMS Hurricane - Naval
+                History.net</a><br>
+              <a href="https://www.naval-history.net/xGM-Chrono-10DD-33Brazil-HMS_Hurricane.htm">HMS Raider - Naval
+                History.net</a><br>
+              <a href="http://bit.ly/2n9Eeiv">HMS Hurricane - Wikipedia</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1942 Section -->
+        <div class="card catevent catpeople" id="1942id">
+          <div class="card-body">
+            <h1 class="timeline-h1">1942 ~ Ian Dury</h1>
+            <p class="timeline-p">
+              Although born in Harrow, Middlesex, singer and songwriter Ian Dury would later claim he was born in
+              Upminster.
+              In 1946, he moved to 90 Front Lane, Cranham, with his mother Margret, and attended Upminster Infant
+              School.
+              In 1949, they moved to 12 Waldegave Gardens in Upminster; as several relatives shared the house, Dury
+              slept
+              in a caravan in the garden, which he loved. Dury found fame in the 1970s and 1980s as the lead singer of
+              'Kilburn and the High Roads' and later 'Ian Dury and the Blockheads'. His 1981 solo album
+              <i>Lord Upminster</i> pays homage to the childhood home he remembered so fondly.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1943 Section -->
+        <div class="card catevent catpeople" id="1943">
+          <div class="card-body">
+            <h1 class="timeline-h1">1943 ~ Raimund Sanders Draper (1913-43)</h1>
+            <p class="timeline-p">
+              An American volunteer in the RAF lost his life when the engine in his Spitfire failed on take-off from
+              RAF
+              Hornchurch.
+              Born 27th December 1913 in London, he moved to Manhattan, New York, USA. Although still living in New
+              York, he
+              joined
+              the RAF as a volunteer pilot in 1940. On taking off from RAF Hornchurch on 24th March 1943, he
+              experienced engine
+              problems
+              with Suttons Junior and Senior Schools in the direct path of his Spitfire. Rather than bail out and risk
+              his plane
+              crashing into the school, he crash-landed on the school field, which the plane skidded across, coming to
+              rest
+              against
+              the wall of one classroom. Despite the school being full of pupils, only one 13-year-old was injured by
+              flying
+              glass
+              from one window.
+            </p>
+            <figure class="centered-figure">
+              <img src="https://www.haveringmuseum.org.uk/wp-content/uploads/2019/02/Sanders-Draper.jpg" width="400"
+                alt="Raimund Sanders Draper">
+              <figcaption>
+                Raimund Sanders Draper (1913-43)
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 1944 Section -->
+
+        <div class="card catevent catpeople catcollection" id="1944">
+          <div class="card-body">
+            <h1 class="timeline-h1">1944 ~ Joseph Holt</h1>
+            <p class="timeline-p">
+              Joseph Holt was born in Romford on 1st May 1924. He was awarded the Distinguished Flying Cross in
+              November 1944
+              for "the utmost fortitude, courage, and devotion to duty." His war medals and records are now displayed
+              in the
+              Havering Museum.
+              Holt survived a bombing raid in 1940, enlisted in the RAF Volunteer Reserve in 1941, flew 36 operational
+              flights,
+              married Josephine in 1943, and was demobilized in 1946. He later emigrated to Canada, passing away in
+              2012.
+            </p>
+            <div class="image-row">
+              <figure class="image-col">
+                <img src="https://haveringmuseum.files.wordpress.com/2013/06/holt-blog-portrait.jpg" width="400"
+                  alt="Joseph Holt portrait">
+                <figcaption>Joseph Holt <br>1924 - 2012<br><br>
+                </figcaption>
+              </figure>
+              <div class="romhm-text">
+                Havering Museum Collection ~ ROMHM:xxx.yyy
+              </div>
+              <figure class="image-col">
+                <img src="images/1944-holt-dfc.jpg" alt="Hoseph Holt's D.F.C." width="261" height="300">
+                <figcaption>
+                  Joseph Holt's D.F.C.<br>
+                </figcaption>
+              </figure>
+              <div class="romhm-text">
+                Havering Museum Collection ~ ROMHM:xxx.yyy
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 1947 Section -->
+        <div class="card catevent catplace" id="1947gp">
+          <div class="card-body">
+            <h1 class="timeline-h1">1947 ~ Gidea Park rail crash</h1>
+            <p class="timeline-p">
+              The Hughley Mail train crashed into the rear of a Southend-bound train in thick fog. The inquest found a
+              "serious
+              error
+              of judgement on the part of the driver" of the mail train passing a signal at danger, but also
+              questioned the
+              inconsistent
+              evidence of the Romford emergency fog signal man over the use of warning track detonators.
+            </p>
+          </div>
+        </div>
+
+        <div class="card catevent catplace" id="1947hh">
+          <div class="card-body">
+            <h1 class="timeline-h1">1947 ~ Harold Hill estate begins</h1>
+            <p class="timeline-p">
+              850 acres of Dagnams Farm were acquired by the London County Council. The Harold Hill estate was
+              proposed in
+              Abercrombie's
+              'Greater London Plan', 1944, as a 'quasi-satellite town'. Building began in 1948-1954 with 7,631 houses.
+              The
+              shopping centre
+              opened in 1952. Housing architect: S. Howard.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1948 Section -->
+        <div class="card catevent catplace" id="1948">
+          <div class="card-body">
+            <h1 class="timeline-h1">1948 ~ The first house on the Harold Hill Estate</h1>
+            <p class="timeline-p">
+              The first permanent house on the new Harold Hill Estate, 44 Gooshays Drive, Harold Hill, was handed over
+              in 1948.</p>
+            <div class="link-container">
+              <a
+                href=" https://www.layersoflondon.org/map/records/the-first-house-on-the-london-county-council-harold-hill-estate-romford-is-handed-over">
+                44 Gooshays Drive, Harold Hill, Romford - Layers of London website
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1953 Section -->
+        <div class="card catevent catplace" id="1953">
+          <div class="card-body">
+            <h1 class="timeline-h1">1953 ~ Romford War Memorial Social Club</h1>
+            <p class="timeline-p">
+              Officially opened on 11 October 1953 by Lt.-Col Sir Francis Whitemore, the Club commemorates service
+              personnel and
+              civilians
+              from Romford who lost their lives during WWII. Panels were donated by the US Airforce. Restored and
+              reopened in
+              2012.
+            </p>
+            <figure class="centered-figure">
+              <img src="https://www.haveringmuseum.org.uk/wp-content/uploads/2020/06/Romford-War-memorial-plaque.jpg"
+                width="300" alt="Romford War Memorial Social Club Plaque">
+              <figcaption>Romford War Memorial Social Club Plaque</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 1958 Section -->
+        <div class="card catevent catplace" id="1958hh">
+          <div class="card-body">
+            <h1 class="timeline-h1">1958 ~ Harold Hill Grammar School</h1>
+            <p class="timeline-p">
+              Opened by Geoffrey Lloyd M.P., it remained a grammar school until 1973 when it became Bedfords Park
+              Comprehensive School.
+            </p>
+
+            <div class="image-row">
+              <figure class="image-col">
+                <img src="images/1958-HHGS.jpg" width="261" height="300" alt="Harold Hill Grammar School">
+                <figcaption>Harold Hill Grammar School</figcaption>
+              </figure>
+
+              <figure class="image-col">
+                <img src="images/1958HHGSdrawing.jpg" width="261" height="300" alt="Harold Hill Grammar School">
+                <figcaption>Harold Hill Grammar School</figcaption>
+              </figure>
+
+              <figure class="image-col">
+                <img src="images/1958-HHGSschoolbadge.jpg" width="282" height="300"
+                  alt="Harold Hill Grammar School badge">
+                <figcaption>Harold Hill Grammar School badge</figcaption>
+              </figure>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 1958 Section -->
+        <div class="card catevent catplace" id="1958rc">
+          <div class="card-body">
+            <h1 class="timeline-h1">1958 ~ Romford Cattle Market Closes</h1>
+            <p class="timeline-p">
+              With the decline in trade, the cattle market, granted its Royal Charter in 1247, closed in 1958. The
+              market
+              continues
+              to open on Wednesdays, Fridays, and Saturdays but no longer sells livestock.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1960 Section -->
+        <div class="card catevent catpeople" id="1960">
+          <div class="card-body">
+            <h1 class="timeline-h1">1960 ~ King Brothers</h1>
+            <p class="timeline-p">
+              In October 1960, the King Brothers were voted 'Top Vocal Group' in a reader's poll by New Musical
+              Express. The
+              band leader,
+              Denis King, was born on 25 July 1939 in Hornchurch. Their first chart success was a cover of 'A White
+              Sport Coat',
+              reaching No. 6.
+            </p>
+            <figure class="centered-figure">
+              <img src="images/1960-Kingbrothers.jpeg" width="300" alt="King Brothers publicity photo">
+              <figcaption>King Brothers publicity photo
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 1965 Section -->
+        <div class="card catevent catplace" id="1965">
+          <div class="card-body">
+            <h1 class="timeline-h1">1965 ~ London Borough of Havering</h1>
+            <p class="timeline-p">
+              The borough was assembled from Romford Borough Council and Hornchurch UDC. Havering's Coat of Arms: Per
+              saltire
+              Argent and Azure a Gem Ring Or set with a Ruby proper. Crest: On a Wreath Or and Azure a Castled
+              Gateway... Badge:
+              A bull's head caboshed proper within a gem ring Or set with a ruby proper. Motto: 'Liberty'.
+            </p>
+            <figure class="centered-figure">
+              <img src="https://www.haveringmuseum.org.uk/wp-content/uploads/2019/03/LBoH-logo-250x250.png" width="300"
+                alt="London Borough of Havering">
+              <figcaption>London Borough of Havering
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 1969rb Section -->
+        <div class="card catevent catplace catsport" id="1969rb">
+          <div class="card-body">
+            <h1 class="timeline-h1">1969 ~ Romford Bombers - Speedway</h1>
+            <p class="timeline-p">
+              The short-lived Romford Bombers raced at Brooklands Stadium from 1969 to 1971, running around Romford
+              Football
+              Club's pitch.
+            </p>
+            <figure class="centered-figure">
+              <img src="images/1969-RomfordBombers.jpg" width="300" alt="Romford Bombers - Speedway">
+              <figcaption>Romford Bombers - Speedway</figcaption>
+            </figure>
+
+            <div class="link-container">
+              <a href="http://www.national-speedway-museum.co.uk/romform%20speedway%20track.html">National Speedway
+                Museum</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1969rm Section -->
+        <div class="card catevent catplace" id="1969rm">
+          <div class="card-body">
+            <h1 class="timeline-h1">1969 ~ Romford Market Place closes to through traffic</h1>
+            <p class="timeline-p">
+              The Mayor and Mayoress of Havering ride through Romford Market on a horse-drawn landau to mark closure
+              of the
+              market to through traffic and the opening of the first section of the Romford ring road.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1975 Section -->
+        <div class="card catevent catplace" id="1975">
+          <div class="card-body">
+            <h1 class="timeline-h1">1975 ~ Queen's Theatre</h1>
+            <p class="timeline-p">
+              The theatre opened on its current purpose-built site in Billet Lane, Hornchurch in 1975. The Queen's
+              Theatre is a
+              500-seat theatre located in Hornchurch.
+            </p>
+            <figure class="centered-figure">
+              <img src="https://www.haveringmuseum.org.uk/wp-content/uploads/2018/10/Queens-Theatre.jpg" width="400"
+                alt="Queen's Theatre, Hornchurch">
+              <figcaption>Queen's Theatre</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 1978 Section -->
+        <div class="card catevent catplace catsport" id="1978rs">
+          <div class="card-body">
+            <h1 class="timeline-h1">1978 ~ Rom Skatepark</h1>
+            <p class="timeline-p">
+              Rom Skatepark is the world's only heritage listed skatepark. The Rom Skatepark was built in
+              1978 to the designs of Adrian Rolt/G-force, and as from 11th September 2014 is a Grade II
+              listed site. It was agreed to be the best, and most completely preserved, of a small number
+              of purpose-built skateparks to survive from the early years of British skateboarding.
+            </p>
+            <figure class="centered-figure">
+              <img src="https://www.haveringmuseum.org.uk/wp-content/uploads/2019/01/romsp-logo50.png" width="400"
+                alt="Rom Skatepark">
+              <figcaption>Rom Skatepark
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 1978 Section -->
+        <div class="card catevent catpeople catsport" id="1978-fl">
+          <div class="card-body">
+            <h1 class="timeline-h1">1978 ~ Frank Lampard</h1>
+            <p class="timeline-p">
+              Born in Romford, Frank James Lampard, OBE is an English football manager, former professional
+              footballer and children's writer.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1980 Section -->
+        <div class="card catevent catplace" id="1980">
+          <div class="card-body">
+            <h1 class="timeline-h1">1980 ~ Hornchurch Country Park</h1>
+            <p class="timeline-p">
+              RAF Hornchurch closed in 1962, and the land was used for gravel extraction until 1980. The
+              Greater London Council then landscaped the area, turning it into Hornchurch Country Park. On
+              5th October 2015, the Ingrebourne Valley Visitors' Centre opened in the park.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1981 Section -->
+        <div class="card catevent catpeople" id="1981">
+          <div class="card-body">
+            <h1 class="timeline-h1">1981 ~ Michelle Suzanne Dockery</h1>
+            <p class="timeline-p">
+              Born in Rush Green Maternity Hospital and grew up in Romford. She is most widely known for her
+              leading performance as Lady Mary Crawley in the ITV (UK) television period drama series
+              <em>Downton Abbey</em>.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1982 Section -->
+        <div class="card catevent catplace" id="1982">
+          <div class="card-body">
+            <h1 class="timeline-h1">1982 ~ Dolphin Centre</h1>
+            <p class="timeline-p">
+              The Dolphin Centre swimming and leisure facility opens in Romford.
+            </p>
+          </div>
+        </div>
+
+
+
+        <!-- 1987 Section -->
+        <div class="card catevent catsport" id="1987">
+          <div class="card-body">
+            <h1 class="timeline-h1">1987 ~ Romford Raiders Ice Hockey Club</h1>
+            <p class="timeline-p">
+              The club was founded in 1987 under the name Romford Raiders and coached by Canadian Gord
+              Jeffrey. The Raiders' first ever match was played on 13th September 1987, against the Oxford
+              City Stars. Romford's first captain, Erskine Douglas, also scored the Raiders' first ever
+              goal.
+            </p>
+            <p class="timeline-p">
+              The team iced at Rom Valley Way Ice Rink until 2013 when the council sold off the site. At
+              first it was feared the team would be homeless and forced to disband, but a last-minute
+              agreement with Lee Valley Ice Centre gave them a temporary home where they played under the
+              name of the London Raiders.
+
+              In 2013, the Romford Ice Arena was sold by Havering Council to investors. The team
+              subsequently had to move to Lee Valley Ice Centre and became the London Raiders. It wasn't
+              until 3rd February 2018 that the Raiders were able to move back to their home town in the
+              newly opened Sapphire Ice and Leisure Centre. After an unsteady start to the game they came
+              from behind to beat Cardiff 5-2 and start a new era of ice hockey in Romford.
+            </p>
+            <figure class="centered-figure">
+              <img src="images/1987-Raidersprogramme.jpg" width="300" alt="Romford Raiders Ice Hockey Club">
+              <figcaption>Romford Raiders Ice Hockey Club programme
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 1990 Section -->
+        <div class="card catevent catplace" id="1990tc">
+          <div class="card-body">
+            <h1 class="timeline-h1">1990 ~ Thames Chase Visitors Centre</h1>
+            <p class="timeline-p">
+              Walk into the visitors centre and you enter a building created almost entirely of wood,
+              designed by the aptly-named Laurie Wood. It is a reconstruction of the original Centre, which
+              was lost to fire following a lightning strike in 2008.
+            </p>
+          </div>
+        </div>
+
+        <!-- 1990 Section -->
+        <div class="card catevent catsport" id="1990hs">
+          <div class="card-body">
+            <h1 class="timeline-h1">1990 ~ Havering Street Hockey Club</h1>
+            <p class="timeline-p">
+              The history of the club starts in approximately 1987/88 when the Dagenham-based DYNAMIC
+              DAGGERS was formed. The team, which included players from all over Havering, had some success
+              in their matches but not in their choice of leader. He had his own agenda, which included
+              lining his pockets with the club money, leaving the players and their parents out of pocket
+              and unable to register the team in the league.
+            </p>
+            <p class="timeline-p">
+              At this point the remaining players approached Dave Jordan for help in reforming their team.
+              Dave not only assisted the players with sponsorship but called together the parents and
+              formed the BARBARIANS STREET HOCKEY CLUB, with a fully constituted committee. The Barbarians
+              club consisted of one junior team, one peewee team and one senior team. Shortly after, there
+              were so many peewee players that a second team was formed — and so the LIBERATORS were born.
+            </p>
+            <p class="timeline-p">
+              The teams had a fairly successful 1988/89 and 1989/90 season. The 1990 season presented the
+              Barbarian club with a problem: the growing number of teams within the club were all using
+              different names. It was decided that the club should adopt a neutral name, and so after much
+              debate the HAVERING STREET HOCKEY CLUB was formed.
+            </p>
+            <p class="timeline-p">
+              In later years the sport decided to adopt the name SKATER HOCKEY instead of STREET HOCKEY, and
+              this change was reflected by the club when it became the HAVERING SKATER HOCKEY CLUB.
+              <br> <b>by Steve Reynoldson</b>
+            </p>
+            <figure class="centered-figure">
+              <img src="images/1990-HSHClogo.gif" width="300" alt="Havering Street Hockey Club">
+              <figcaption>Havering Street Hockey Club badge</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 1996 Section -->
+        <div class="card catevent catplace" id="1996">
+          <div class="card-body">
+            <h1 class="timeline-h1">1996 ~ The Romford Mosque</h1>
+            <p class="timeline-p">The Romford Mosque opened in December 1996.</p>
+          </div>
+        </div>
+
+        <!-- 2000 Section -->
+        <div class="card catevent catplace" id="2000">
+          <div class="card-body">
+            <h1 class="timeline-h1">2000 ~ RSPB Rainham Marshes</h1>
+            <p class="timeline-p">
+              Starting in 2000 the RSPB acquired 411 hectares of medieval marsh land in the Rainham
+              area from the Ministry of Defence that had been used as a firing range for the last 100
+              years by the British Army. RSPB Rainham Marshes environmentally friendly visitor centre
+              opened to the public in 2006 at a cost of &pound;2,000,000. Rainham Marshes protects
+              411 hectares of ancient, low-lying grazing marsh in the Thames Estuary. Its complex of
+              wet grassland and ditches, together with grassland and scrub, supports many breeding and
+              wintering birds. Wildlife also includes scarce wetland plants and insects, and a key
+              population of the nationally declining water vole.
+            </p>
+            <figure class="centered-figure">
+              <img src="images/2000-rspblogo.png" width="300" alt="RSPB Rainham Marshes">
+              <figcaption>RSPB Rainham Marshes</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 2006 Section -->
+        <div class="card catevent catplace" id="2006">
+          <div class="card-body">
+            <h1 class="timeline-h1">2006 ~ Queen's Hospital, Romford</h1>
+            <p class="timeline-p">
+              Built on the site of the former Oldchurch Park as a replacement for Harold Wood
+              Hospital, Oldchurch Hospital, Rush Green Hospital and St. George's Hospital.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2010 Section -->
+        <div class="card catevent catplace" id="2010">
+          <div class="card-body">
+            <h1 class="timeline-h1">2010 ~ Havering Museum</h1>
+            <p class="timeline-p">
+              Housed in part of the old Romford Brewery, the Havering Museum opened on 26th May, 2010.
+            </p>
+            <figure class="centered-figure">
+              <img src="https://www.haveringmuseum.org.uk/wp-content/uploads/2018/10/DSC_0919cropped.jpg" width="300"
+                alt="Havering Museum">
+              <figcaption> Havering Museum </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 2012 Section -->
+        <div class="card catevent catplace" id="2012bt">
+          <div class="card-body">
+            <h1 class="timeline-h1">2012 ~ Brookside Theatre</h1>
+            <p class="timeline-p">
+              The Brookside Theatre opened on 23rd May 2012.<br>
+              The Brookside Theatre Company was formed in 2012 with the aim to bring top quality theatre
+              productions to the Brookside Theatre's stage and to involve local performers in exciting new
+              musicals from aspiring international composers and lyricists as well as established modern and
+              classic productions. The company, headed by the theatre's artistic team, Jai and Harri Sepple,
+              staged their first musical, <em>Shout The Mod Musical</em>, in May 2012 which marked the
+              opening of the Brookside Theatre itself.
+            </p>
+            <figure class="centered-figure">
+              <img src="https://www.haveringmuseum.org.uk/wp-content/uploads/2020/06/Brookside-Theatre-1.jpg"
+                width="300" alt="Brookside Theatre">
+              <figcaption>
+                Brookside theatre</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 2012 Section -->
+        <div class="card catevent catsport" id="2012ot">
+          <div class="card-body">
+            <h1 class="timeline-h1">2012 ~ Olympic Torch comes to Havering</h1>
+            <p class="timeline-p">
+              On Sunday 22 July 2012, the Olympic torch (designed by the Barber Osgerby firm)
+              was carried through the borough of Havering, stopping for special events at Romford Market,
+              Queen's Theatre Hornchurch and Rainham Hall. It was carried by nominated people from all
+              over Havering.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2018 Section -->
+        <div class="card catevent catplace catsport" id="2018si">
+          <div class="card-body">
+            <h1 class="timeline-h1">2018 ~ Sapphire Ice &amp; Leisure Centre Opens</h1>
+            <p class="timeline-p">The new home of the Everyone Active Romford Raiders Ice Hockey Club.</p>
+            <figure class="centered-figure">
+              <img src="images/2018-sapphireice.jpg" width="300" alt="Sapphire Ice &amp; Leisure Centre">
+              <figcaption>Sapphire Ice &amp; Leisure Centre</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 2018 Section -->
+        <div class="card catevent" id="2018hh">
+          <div class="card-body">
+            <h1 class="timeline-h1">2018 ~ Havering Hoard Discovered</h1>
+            <p class="timeline-p">
+              Four hoards have been unearthed in Havering. This has been identified as the largest Bronze
+              Age hoard ever to be discovered in London, the third largest in the UK. 453 Bronze Age
+              weapons have been uncovered dating between c.900 and c.800BC. The objects include axe heads,
+              spear heads, swords, tools and some unusual objects which are rarely found in the UK.
+            </p>
+            <div class="image-row">
+              <figure class="image-col">
+                <img src="images/2018-Haveringhoard1.jpg" alt="Museum of London" height="300">
+                <figcaption>© Museum of London</figcaption>
+              </figure>
+
+              <figure class="image-col">
+                <img src="images/2018-Haveringhoard3.jpg" alt="Museum of London" height="300">
+                <figcaption>© Museum of London</figcaption>
+              </figure>
+
+              <figure class="image-col">
+                <img src="images/2018-Haveringhoard2.jpg" alt="Museum of London" height="300">
+                <figcaption>© Museum of London</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div><!--Close of autoTimelineTrack-->
+    </div> <!--Close of autoTimelineWrap-->
+  </div>
+</body>
+
+</html>
