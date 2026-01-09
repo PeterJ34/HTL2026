@@ -1,0 +1,24 @@
+/* Container start*/
+.container {
+  margin-top: 65px; /* drops container below navbar - 65px would take it right under navabar*/
+
+  display: block;
+  /*height: 900px; fix height of container*/
+  width: 80%;
+  background-color: rgb(0, 0, 0);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 55px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Container end*/
+
+
+.paraComplete {
+  color: rgb(12, 243, 12);
+}
+p {
+  color: rgb(210, 96, 30); /* change h2 color */
+}

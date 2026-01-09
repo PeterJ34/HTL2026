@@ -1,0 +1,14 @@
+.navbar {
+  background: #fbde81;
+  color: #7f1629;
+}
+
+.navbar-brand {
+  color: #7f1629; /*Navbar brand - Text color */
+}
+.nav-link {
+  color: #7f1629; /*Navbar text color */
+  background-color: #fbde81;
+  color: #7f1629;
+  font-size: 25px; /* nav-link on nav-bar notside-bar */
+}
