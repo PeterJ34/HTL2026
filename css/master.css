@@ -141,6 +141,7 @@ body {
 .sidebar .nav-link {
   padding: 8px 20px;
   color: #7f1629;
+  color: #fbde81;
   /*Year & Title text */
   transition: background 0.3s;
   font-size: 15px !important;
@@ -276,7 +277,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s, transform 0.2s;
+  transition:
+    background 0.2s,
+    transform 0.2s;
 }
 
 .scroll-arrow:hover {
@@ -304,15 +307,19 @@ body {
 .nav-link {
   color: #fbde81;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
+  background-color: #7f1629;
+  margin-right: 10px;
+  border-radius: 10px;
+  justify-content: center;
 }
 
 .nav-link:hover {
   color: #7f1629;
   font-size: 25px;
-  background: #7f1629 !important;
+  background: grey !important;
   color: #fbde81 !important;
-  font-weight: 500;
+  font-weight: 400;
   box-shadow: none;
   border-radius: 10px;
 }
@@ -326,6 +333,7 @@ body {
 /*navbar brand style*/
 .navbar-brand {
   color: #fbde81;
+  background-color: #7f1629;
   font-size: 25px;
   display: flex;
   align-items: center;
@@ -387,7 +395,10 @@ body {
 
 /* Timeline viewer body overrides */
 .timeline-viewer-body {
-  font-family: Segoe UI, Roboto, Arial;
+  font-family:
+    Segoe UI,
+    Roboto,
+    Arial;
   max-width: 980px;
   margin: 24px auto;
   padding: 0 16px;
@@ -400,6 +411,13 @@ body {
   align-items: center;
   margin-bottom: 16px;
   flex-wrap: wrap;
+}
+/* make search category.html radio buttons vertical*/
+.category-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
 }
 
 /* Make the year label bold */
@@ -540,7 +558,8 @@ body {
   flex-wrap: wrap;
   gap: 16px;
   margin: 16px 0;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-col {
