@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search - 6th March 2026</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- External JS -->
+  <script defer src="js/search.js"></script>
+  <!-- category search merged into search.js; category.js no longer required -->
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/master.css">
+  <!--overflow:auto allows scrolling of page which is set as hidden in the master.css -->
+  <style>
+    /* 6th March CHANGE: Added custom styling for two-column layout */
+    html,
+    body {
+      overflow: auto !important;
+    }
+
+    /* 6th March CHANGE: Two-column layout container for sidebar and results */
+    .search-container {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      min-height: calc(100vh - 250px);
+    }
+
+    /* 6th March CHANGE: Left sidebar styling (30% width) */
+    .search-sidebar {
+      width: 30%;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+
+    /* 6th March CHANGE: Right results section styling (70% width) */
+    .search-results {
+      width: 70%;
+      padding: 20px;
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+
+    .search-section {
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      border-bottom: 3px solid #ccc;
+    }
+
+    .search-section:last-child {
+      border-bottom: none;
+    }
+
+    .search-title {
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 30px;
+      grid-column: 1 / -1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+  <!-- 6th March CHANGE: Added navbar fetch script -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+
+      })
+      .catch(error => {
+        console.error('Error loading the navigation:', error);
+      });
+  </script>
+  <div class="container container-sh">
+
+    <h2 class="search-title">Search Havering Timeline</h2>
+
+    <!-- 6th March CHANGE: Split into two-column layout: Search Functions (Left 30%) and Results (Right 70%) -->
+    <div class="search-container">
+
+      <!-- 6th March CHANGE: LEFT SIDEBAR: Search Functions (30%) -->
+      <div class="search-sidebar">
+
+        <!-- Year Search -->
+        <div class="search-section">
+          <label for="year"><b>Search by Year:</b></label><br>
+          <input id="year" type="text" placeholder="e.g. 1833 or '49 BC'" class="timeline-viewer-input">
+          <button id="show" class="timeline-viewer-button">Show events for this year</button>
+        </div>
+
+        <!-- Timeline Search -->
+        <div class="search-section">
+          <label for="searchQuery"><b>Keyword Search:</b></label><br>
+          <input id="searchQuery" type="text" placeholder="e.g. event, name, location" class="timeline-viewer-input">
+          <button id="searchBtn" class="timeline-viewer-button">Show matches</button>
+        </div>
+
+        <!-- Category Search -->
+        <div class="search-section">
+          <label><b>Search by Category:</b></label><br>
+          <div class="category-options">
+            <div>
+              <input type="radio" id="catcollection" name="category" value="catcollection"> <label
+                for="catcollection">Havering
+                Museum Collection</label>
+            </div>
+            <div>
+              <input type="radio" id="catplace" name="category" value="catplace"> <label for="catplace">Place</label>
+            </div>
+            <div>
+              <input type="radio" id="catsport" name="category" value="catsport"> <label for="catsport">Sport</label>
+            </div>
+            <div>
+              <input type="radio" id="catpeople" name="category" value="catpeople"> <label
+                for="catpeople">People</label>
+            </div>
+          </div><br>
+          <button id="categorySearchBtn" class="timeline-viewer-button">Search Havering Timeline by category</button>
+        </div>
+
+      </div>
+
+      <!-- 6th March CHANGE: RIGHT SECTION: Search Results (70%) -->
+      <div class="search-results">
+
+        <div id="output"></div>
+
+        <div id="category-output"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

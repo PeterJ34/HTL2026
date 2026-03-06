@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Add Timeline Entry</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding: 2rem;
+    }
+
+    .preview {
+      white-space: pre-wrap;
+      background: #f8f9fa;
+      padding: 1rem;
+      border: 1px solid #ddd
+    }
+  </style>
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading the navigation:', error);
+      });
+  </script>
+
+  <!--End of Navigation bar-->
+  <div class="container">
+    <h1 class="mb-4">Add Timeline Entry</h1>
+    <form id="entryForm">
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label class="form-label">Year</label>
+          <input class="form-control" name="year" id="year" placeholder="e.g. 1978" />
+        </div>
+        <div class="col-md-9">
+          <label class="form-label">Title</label>
+          <input class="form-control" name="title" id="title" placeholder="Title shown in timeline" />
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Text / Description</label>
+        <textarea class="form-control" id="text" rows="6" placeholder="Write the main body text here"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Links (one per line)</label>
+        <textarea class="form-control" id="links" rows="2" placeholder="https://example.com"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Images (image URL each line)</label>
+        <textarea class="form-control" id="images" rows="2" placeholder="images/1978-photo.jpg"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Attach image files (optional)</label>
+        <input class="form-control" type="file" id="imageFiles" accept="image/*" multiple />
+        <div class="form-text">Attached files will be included in the downloaded ZIP and referenced as
+          <code>images/filename</code> inside the snippet.
+        </div>
+        <div id="attachedList" class="mt-2"></div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Museum collection text (optional)</label>
+        <input class="form-control" id="collectionText" placeholder="Havering Museum Collection ~ ROMHM:2010:1007" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Add sources or references if applicable, these may not be published but might help
+          with any
+          queries</label>
+        <textarea class="form-control" id="sources" rows="2" placeholder="Add source here, one per line."></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label"><b>Categories </b>- Leave <b>Events</b> ticked so that it appears in the main
+          timeline.
+
+        </label>
+        <div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="cat-event" name="categories" value="catevent" checked>
+            <label class="form-check-label" for="cat-event">Events</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="cat-people" name="categories" value="catpeople">
+            <label class="form-check-label" for="cat-people">People</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="cat-place" name="categories" value="catplace">
+            <label class="form-check-label" for="cat-place">Place</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="cat-sport" name="categories" value="catsport">
+            <label class="form-check-label" for="cat-sport">Sport</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="cat-collection" name="categories" value="catcollection">
+            <label class="form-check-label" for="cat-collection">Collection</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <button type="button" id="previewBtn" class="btn btn-primary">Preview Snippet</button>
+        <button type="button" id="copyBtn" class="btn btn-secondary">Copy HTML</button>
+        <button type="button" id="downloadBtn" class="btn btn-success">Download Snippet</button>
+        <p>Email downloaded snippet to <b>haveringtimeline@gmail.com</b></p>
+      </div>
+    </form>
+
+    <h3>Rendered Preview</h3>
+    <div id="renderedPreview" class="preview" style="white-space: normal;"></div>
+
+    <h3 class="mt-3">Raw HTML</h3>
+    <div id="rawPreview" class="preview"></div>
+
+    <h3 class="mt-4">Instructions</h3>
+    <ul>
+      <li>Use <b>Download Snippet</b> then run the included Node helper to append to <code>timeline.html</code>:</li>
+    </ul>
+    <pre>node "js/append_entry_to_timeline.js" path/to/snippet.html</pre>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+  <script>
+    function slugify(s) {
+      return s.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    // Maintain a list of attached files (objects {file, caption}) so multiple selections are preserved
+    let attachedFiles = [];
+
+    function updateAttachedList() {
+      const el = document.getElementById('attachedList');
+      if (!el) return;
+      if (!attachedFiles.length) {
+        el.innerHTML = '<div class="form-text">No files attached</div>';
+        return;
+      }
+      let html = '<ul class="list-group small">';
+      attachedFiles.forEach((fobj, idx) => {
+        const name = escapeHtml(fobj.file.name);
+        const caption = escapeHtml(fobj.caption || '');
+        html += `<li class="list-group-item">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <strong>${name}</strong>
+              <div class="mt-2">Caption: <input type="text" class="form-control form-control-sm d-inline-block w-75" data-idx="${idx}" value="${caption}" /></div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-sm btn-outline-danger ms-2" data-remove-idx="${idx}">Remove</button>
+            </div>
+          </div>
+        </li>`;
+      });
+      html += '</ul>';
+      el.innerHTML = html;
+      // attach handlers
+      el.querySelectorAll('button[data-remove-idx]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const idx = Number(btn.getAttribute('data-remove-idx'));
+          attachedFiles.splice(idx, 1);
+          updateAttachedList();
+        });
+      });
+      el.querySelectorAll('input[data-idx]').forEach(input => {
+        input.addEventListener('input', () => {
+          const idx = Number(input.getAttribute('data-idx'));
+          attachedFiles[idx].caption = input.value;
+        });
+      });
+    }
+
+    // When user picks files, append them to attachedFiles (avoid exact duplicate by name+size+lastModified)
+    document.getElementById('imageFiles').addEventListener('change', (e) => {
+      const files = Array.from(e.target.files || []);
+      for (const f of files) {
+        const exists = attachedFiles.some(x => x.file.name === f.name && x.file.size === f.size && x.file.lastModified === f.lastModified);
+        if (!exists) attachedFiles.push({ file: f, caption: '' });
+      }
+      // clear file input so user can pick same files again if needed
+      e.target.value = '';
+      updateAttachedList();
+    });
+
+    function buildSnippet() {
+      const year = document.getElementById('year').value.trim();
+      const title = document.getElementById('title').value.trim();
+      const text = document.getElementById('text').value.trim();
+      const links = document.getElementById('links').value.split('\n').map(l => l.trim()).filter(Boolean);
+      const imagesUrls = document.getElementById('images').value.split('\n').map(l => l.trim()).filter(Boolean);
+      const imageFiles = attachedFiles.slice();
+      const cats = Array.from(document.querySelectorAll('input[name="categories"]:checked')).map(i => i.value);
+
+      if (!title) {
+        alert('Please provide a Title');
+        return '';
+      }
+
+      const id = year ? year : 'x';
+      const classStr = ['card', 'catevent'].concat(cats).join(' ').replace(/\s+/g, ' ').trim();
+
+      // Build paragraphs from text
+      const paras = text.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+      let textHtml = '';
+      if (paras.length) {
+        for (const p of paras) {
+          textHtml += `            <p class="timeline-p">\n              ${escapeHtml(p)}\n            </p>\n`;
+        }
+      }
+
+      const collectionText = document.getElementById('collectionText').value.trim();
+      const sources = (document.getElementById('sources') ? document.getElementById('sources').value.split('\n').map(s => s.trim()).filter(Boolean) : []);
+
+      // Images HTML: prefer attached files if provided, otherwise use image URLs textarea
+      let imagesHtml = '';
+      const imageFilesList = attachedFiles.slice();
+      if (imageFilesList.length) {
+        // build items with src and caption
+        const items = imageFilesList.map(fobj => ({ src: `images/${fobj.file.name}`, caption: fobj.caption || '' }));
+        if (items.length === 1) {
+          const it = items[0];
+          imagesHtml += '            <figure class="centered-figure">\n';
+          imagesHtml += `              <img src="${escapeHtml(it.src)}" width="300" alt="${escapeHtml(title)}">\n`;
+          if (it.caption) imagesHtml += `              <figcaption>${escapeHtml(it.caption)}</figcaption>\n`;
+          imagesHtml += '            </figure>\n';
+        } else {
+          for (const it of items) {
+            imagesHtml += '            <figure class="image-col">\n';
+            imagesHtml += `              <img src="${escapeHtml(it.src)}" height="300" alt="${escapeHtml(title)}">\n`;
+            if (it.caption) imagesHtml += `              <figcaption>${escapeHtml(it.caption)}</figcaption>\n`;
+            imagesHtml += '            </figure>\n';
+          }
+        }
+        imagesHtml += '            <br>\n';
+        if (collectionText) {
+          imagesHtml += '            <div class="romhm-text">\n';
+          imagesHtml += `              ${escapeHtml(collectionText)}\n`;
+          imagesHtml += '            </div>\n';
+        }
+      } else if (imagesUrls.length) {
+        // For URL images, if only one URL use centered-figure, otherwise image-col per image
+        const urlItems = imagesUrls.map(imgLine => {
+          const parts = imgLine.split('|').map(s => s.trim()).filter(Boolean);
+          return { src: parts[0], caption: parts[1] || '', width: parts[2] || '300' };
+        });
+        if (urlItems.length === 1) {
+          const it = urlItems[0];
+          imagesHtml += '            <figure class="centered-figure">\n';
+          imagesHtml += `              <img src="${escapeHtml(it.src)}" width="${escapeHtml(it.width)}" alt="${escapeHtml(title)}">\n`;
+          if (it.caption) imagesHtml += `              <figcaption>${escapeHtml(it.caption)}</figcaption>\n`;
+          imagesHtml += '            </figure>\n';
+        } else {
+          for (const it of urlItems) {
+            imagesHtml += '            <figure class="image-col">\n';
+            imagesHtml += `              <img src="${escapeHtml(it.src)}" height="300" alt="${escapeHtml(title)}">\n`;
+            if (it.caption) imagesHtml += `              <figcaption>${escapeHtml(it.caption)}</figcaption>\n`;
+            imagesHtml += '            </figure>\n';
+          }
+        }
+        imagesHtml += '            <br>\n';
+        if (collectionText) {
+          imagesHtml += '            <div class="romhm-text">\n';
+          imagesHtml += `              ${escapeHtml(collectionText)}\n`;
+          imagesHtml += '            </div>\n';
+        }
+      }
+
+      // Links
+      let linksHtml = '';
+      if (links.length) {
+        linksHtml += '            <div class="link-container">\n';
+        for (const l of links) {
+          linksHtml += `              <a href="${escapeHtml(l)}" class="center-text">\n                ${escapeHtml(l)}\n              </a><br>\n\n`;
+        }
+        linksHtml += '            </div>\n';
+      }
+
+      // Sources
+      let sourcesHtml = '';
+      if (sources.length) {
+        sourcesHtml += '            <div class="sources">\n              <h4>Sources</h4>\n              <ul>\n';
+        for (const s of sources) {
+          sourcesHtml += `                <li>${escapeHtml(s)}</li>\n`;
+        }
+        sourcesHtml += '              </ul>\n            </div>\n';
+      }
+
+      const displayTitle = year ? year + ' ~ ' + title : title;
+      const header = `              <h1 class="timeline-h1">\n                ${escapeHtml(displayTitle)}\n              </h1>\n`;
+
+      const comment = `        <!-- ${escapeHtml(year ? year : '')} Section -->\n`;
+
+      const snippet = `${comment}        <div class="${classStr}" id="${escapeHtml(id)}" title="${escapeHtml(displayTitle)}">\n          <div class="card-body">\n${header}${textHtml}${imagesHtml}${linksHtml}${sourcesHtml}          </div>\n        </div>`;
+
+      return snippet;
+    }
+
+    document.getElementById('previewBtn').addEventListener('click', () => {
+      const snippet = buildSnippet();
+      // Rendered preview (interpreted HTML)
+      const rendered = document.getElementById('renderedPreview');
+      const raw = document.getElementById('rawPreview');
+      if (rendered) rendered.innerHTML = snippet;
+      if (raw) raw.textContent = snippet;
+      // Scroll the preview into view so users see results immediately
+      try {
+        if (rendered) rendered.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch (e) {
+        // ignore scrolling errors on old browsers
+      }
+    });
+
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      const snippet = buildSnippet();
+      if (!snippet) return;
+      // Try modern Clipboard API first
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(snippet);
+          alert('Copied to clipboard');
+          return;
+        }
+      } catch (e) {
+        // fall through to fallback method
+      }
+
+      // Fallback: use a hidden textarea + execCommand('copy')
+      try {
+        const ta = document.createElement('textarea');
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        ta.value = snippet;
+        document.body.appendChild(ta);
+        ta.select();
+        const ok = document.execCommand('copy');
+        ta.remove();
+        if (ok) {
+          alert('Copied to clipboard (fallback)');
+        } else {
+          throw new Error('execCommand failed');
+        }
+      } catch (e) {
+        alert('Copy failed — please use Download Snippet instead');
+      }
+    });
+
+    document.getElementById('downloadBtn').addEventListener('click', async () => {
+      const snippet = buildSnippet();
+      if (!snippet) return;
+      const yearVal = document.getElementById('year').value.trim() || 'x';
+      const imageFiles = attachedFiles.slice();
+
+      if (imageFiles.length) {
+        const zip = new JSZip();
+        zip.file(`${yearVal}.snippet.html`, snippet);
+        const imgFolder = zip.folder('images');
+        for (const fobj of imageFiles) {
+          imgFolder.file(fobj.file.name, fobj.file);
+        }
+        const content = await zip.generateAsync({ type: 'blob' });
+        saveAs(content, `${yearVal}.snippet.zip`);
+        return;
+      }
+
+      // fallback: single HTML download
+      const blob = new Blob([snippet], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${yearVal}.snippet.html`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+
+</html>
