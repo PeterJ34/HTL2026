@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
         position: "fixed",
         transform: "rotate(-90deg)",
         cursor: "pointer",
-        zIndex: "1600",
+        zIndex: "1000", // If value is above 1000 the slider goes over navbar menu when sscreen small.
         background: "transparent",
         appearance: "none",
         height: "10px",
