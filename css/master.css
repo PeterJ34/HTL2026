@@ -358,10 +358,19 @@ body {
   /*Moves top menu to right, more central*/
 }
 
-/* Index Page only */
+/* Index Page only - 8th March 2026 */
 .indexpage p {
   color: #2706e6;
-  font-size: 33px;
+  font-size: 15px;
+}
+/* Index Page only - 8th March 2026 */
+.indexpage {
+  background-image: url("/images/parchment.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
 /* =========================================================
