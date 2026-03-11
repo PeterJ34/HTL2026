@@ -519,7 +519,7 @@
         });
       }
 
-      if (romhm) parts.push(`<div class="romhm-text">${romhm.innerHTML}</div>`);
+     // if (romhm) parts.push(`<div class="romhm-text">${romhm.innerHTML}</div>`); // commented out 10th March to stop duplicate romhm-text being displayed
       if (linkContainer) parts.push(`<div class="link-container">${linkContainer.innerHTML}</div>`);
       if (copy) parts.push(`<div class="copyright-text">${copy.innerHTML}</div>`);
 
@@ -637,7 +637,7 @@
         });
       }
 
-      if (romhm) parts.push(`<div class="romhm-text">${romhm.innerHTML}</div>`);
+      //   if (romhm) parts.push(`<div class="romhm-text">${romhm.innerHTML}</div>`); //commented out 10th March to stop duplicate romhm-text being displayed
       if (linkContainer) parts.push(`<div class="link-container">${linkContainer.innerHTML}</div>`);
       if (copy) parts.push(`<div class="copyright-text">${copy.innerHTML}</div>`);
 
