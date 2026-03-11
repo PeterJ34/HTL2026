@@ -1,5 +1,5 @@
 /* =========================================================
-   BASE LAYOUT
+  GLOBAL LAYOUT
    ========================================================= */
 body {
   margin: 0;
@@ -19,6 +19,118 @@ body {
 }
 
 /* .accordion-body p consolidated later with font-weight; see the "Global accordion-body style" block below. */
+/* =========================================================
+   Utility Text
+   ========================================================= */
+
+/* Romhm text styles */
+.romhm-text {
+  font-size: 1rem;
+  color: #ec0909;
+  margin: 8px 0;
+  padding: 6px 10px;
+  font-weight: 500;
+  align-content: center;
+  /* background: #f0dd0a; 
+  border-left: 3px solid #ddd;
+  border-radius: 2px;
+  height: 35px; */
+}
+
+/* No data message styles */
+.no-data-message {
+  background-color: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 16px 0;
+  color: #856404;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Copyright message styles */
+.copyright-text {
+  font-size: 0.85rem;
+  color: #1b0909;
+  margin-top: 12px;
+  font-weight: 800;
+  text-align: center;
+  font-style: italic;
+}
+
+/* =========================================================
+  IMAGE & FIGURE STYLES 
+   ========================================================= */
+
+/* Image and figure styles */
+figcaption {
+  color: black;
+  font-weight: bold;
+}
+
+.centered-figure {
+  text-align: center;
+  margin: 16px 0;
+ /*  padding: 0; */
+}
+
+.centered-figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.image-col img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Link container styles */
+.link-container {
+  margin: 16px 0;
+  padding: 12px;
+  /* background: #f9f9f9; */
+  border: 1px solid #e0e0e0;
+  border-radius: 9px;
+  width: fit-content;
+
+}
+
+.link-container a {
+  display: block;
+  margin: 8px 0;
+  color: #0b61a4;
+  text-decoration: none;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.link-container a:hover {
+  text-decoration: underline;
+  color: #084a84;
+}
+
+/* Image row and column styles */
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 16px 0;
+ /*  align-items: center; */
+  justify-content: center;
+}
+
+.image-col {
+  /* flex: 0 1 auto; */
+  min-width: 250px;
+  text-align: center;
+}
+
+
 
 /* =========================================================
    SIDEBAR
@@ -41,30 +153,13 @@ body {
 }
 
 /* =========================================================
-   ACCORDION (Sidebar Menu)
+   SIDEBAR ACCORDION — Bootstrap Overrides 
    ========================================================= */
-/* =========================================================
-   ACCORDION — Bootstrap Overrides (Global Base Layer)
-   ========================================================= */
-
-/* Sidebar accordion arrows */
-.sidebar .accordion-button::before {
-  color: #7f1629;
-}
-
-/* Arrow rotates when open */
-.accordion-button:not(.collapsed)::before {
-  transform: rotate(180deg);
-}
 
 /* Remove Bootstrap borders/shadows */
 .accordion-item {
   border: none !important;
   background: transparent !important;
-}
-
-.accordion-button:focus {
-  box-shadow: none !important;
 }
 
 /* Global accordion-button look */
@@ -80,6 +175,25 @@ body {
   color: #7f1629 !important;
   font-weight: 800 !important;
   background-color: #fbde81 !important;
+
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+}
+/* Sidebar accordion arrows */
+.sidebar .accordion-button::before {
+  color: #7f1629;
+}
+
+/* Arrow rotates when open but not needed now, arrow changes colour on hover -
+.accordion-button:not(.collapsed)::before {
+  transform: rotate(180deg);
+}
+*/
+/* Remove Bootstrap borders/shadows */
+.accordion-item {
+  border: none !important;
+  background: transparent !important;
 }
 
 /* Global accordion-body style */
@@ -104,22 +218,20 @@ body {
 }
 
 /* =========================================================
-   ACCORDION — Sidebar Overrides (Higher Specificity)
+   SDEBAR ACCORDION OVERRIDES
    ========================================================= */
 
 .sidebar .accordion-button {
   background: #7f1629 !important;
   color: #fbde81 !important;
-  font-weight: 500;
-  box-shadow: none;
 }
 
 .sidebar .accordion-button:hover {
-  background: #7f1629 !important;
-  color: #fbde81 !important;
-  font-weight: 500;
-  box-shadow: none;
+  background: #fbde81 !important;
+  color: #7f1629 !important;
   border-radius: 10px;
+  /* font-weight: 500; */
+  /* box-shadow: none; */
 }
 
 .sidebar .accordion-button:not(.collapsed) {
@@ -140,7 +252,6 @@ body {
    ========================================================= */
 .sidebar .nav-link {
   padding: 8px 20px;
-  color: #7f1629;
   color: #fbde81;
   /*Year & Title text */
   transition: background 0.3s;
@@ -153,8 +264,8 @@ body {
   background: #7f1629;
   color: #fbde81;
   border-radius: 10px;
-  font-size: 15px !important;
-  /* nav-link only on side-bar */
+  /*  font-size: 15px !important;
+  nav-link only on side-bar */
 }
 
 .sidebar i {
@@ -171,7 +282,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #fbde81;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* =========================================================
@@ -184,7 +295,7 @@ body {
   background: #fbde81;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: #74af37;
+  /* box-shadow: #74af37; */
 }
 
 #autoTimelineTrack {
@@ -192,19 +303,20 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  transition: none;
+  /* transition: none; */
   will-change: transform;
 }
 
 /* =========================================================
    TIMELINE CARDS
    ========================================================= */
-.timeline-section::before {
+/* .timeline-section::before {
   content: "";
   display: block;
   height: 70px;
   margin-top: -70px;
 }
+*/
 
 .card {
   width: 85%;
@@ -216,11 +328,10 @@ body {
 
 .card-body {
   background: #fbde81;
-  /* Background for card body used for People and Places accordion text.*/
+Background for card body used for People and Places accordion text.
   padding: 1rem;
   border-radius: 8px;
-  /* card text used for People and Places accordion.*/
-}
+ }
 
 .timeline-h1 {
   color: #7f1629;
@@ -233,9 +344,9 @@ body {
   color: #7f1629;
   font-size: 1.1rem;
   text-align: justify;
-  /* card text used for People and Places accordion.*/
   padding: 0 1rem;
 }
+
 
 /* =========================================================
    IMAGE LAYOUTS
@@ -249,9 +360,10 @@ body {
    LINK CONTAINER
    ========================================================= */
 .link-container::before {
-  color: #000000;
+  color: black;
   content: "More information at ......\00a0";
-  font-weight: 500;
+  font-weight: 600;
+ 
 }
 
 /* Link styles consolidated later under "Link container styles" to avoid duplicates. */
@@ -272,7 +384,7 @@ body {
   color: #fbde81;
   font-size: 24px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1000; /* Leave in, if removed scroll arrows don't work */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -295,7 +407,9 @@ body {
 #scrollDown {
   bottom: 30%;
 }
-
+/* =========================================================
+   NAVBAR
+   ========================================================= */
 /*Nav-bar only */
 
 .navpage .navbar {
@@ -315,10 +429,9 @@ body {
 }
 
 .nav-link:hover {
-  color: #7f1629;
-  font-size: 25px;
-  background: grey !important;
-  color: #fbde81 !important;
+   font-size: 25px;
+  background: #fbde81; !important;
+  color: #7f1629;!important;
   font-weight: 400;
   box-shadow: none;
   border-radius: 10px;
@@ -330,7 +443,7 @@ body {
   font-size: 25px;
 }
 
-/*navbar brand style*/
+/* navbar brand style */
 .navbar-brand {
   color: #fbde81;
   background-color: #7f1629;
@@ -343,8 +456,8 @@ body {
 }
 
 .navbar-brand:hover {
-  color: #fbde81;
-  background-color: #7f1629;
+  color: #7f1629;
+  background-color: #fbde81;;
   font-size: 25px;
   display: flex;
   align-items: center;
@@ -437,12 +550,12 @@ body {
 .timeline-viewer-input {
   padding: 8px 10px;
   font-size: 16px;
-  flex: 0 0 180px;
+ /*  flex: 0 0 180px; */ 
 }
 
 .timeline-viewer-button {
   padding: 8px 12px;
-  font-size: 15px;
+/*   font-size: 15px; */
 }
 
 .timeline-notice {
@@ -454,7 +567,7 @@ body {
   background: #f7f7f7;
   padding: 12px;
   border-radius: 6px;
-  overflow: auto;
+ /* overflow: auto; */
 }
 
 /* Timeline entry styles */
@@ -471,16 +584,9 @@ body {
   margin: 6px 0;
   color: #333;
 }
-
-.copyright-text {
-  font-size: 0.85rem;
-  color: #1b0909;
-  margin-top: 12px;
-  font-weight: 800;
-  text-align: center;
-  font-style: italic;
-}
-
+/* =========================================================
+  SEARCH PAGE
+   ========================================================= */
 /* Dropdown menu for multiple matches */
 .match-dropdown {
   margin: 12px 0;
@@ -492,94 +598,12 @@ body {
 
 .match-dropdown select {
   padding: 8px 10px;
-  font-size: 15px;
-  margin-right: 8px;
-}
+ /* font-size: 15px;
+  margin-right: 8px; */
 
 .match-dropdown button {
   padding: 8px 12px;
-  font-size: 15px;
+ /* font-size: 15px; */
 }
 
-/* Image and figure styles */
-.centered-figure {
-  text-align: center;
-  margin: 16px 0;
-  padding: 0;
-}
 
-.centered-figure img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-/* Romhm text styles */
-.romhm-text {
-  font-size: 0.85rem;
-  color: #ec0909;
-  margin: 8px 0;
-  padding: 6px 10px;
-  background: #fafafa;
-  border-left: 3px solid #ddd;
-  border-radius: 2px;
-}
-
-/* Link container styles */
-.link-container {
-  margin: 16px 0;
-  padding: 12px;
-  background: #f9f9f9;
-  border: 1px solid #e0e0e0;
-  border-radius: 9px;
-}
-
-.link-container a {
-  display: block;
-  margin: 8px 0;
-  color: #0b61a4;
-  text-decoration: none;
-  font-size: 0.95rem;
-  word-break: break-word;
-}
-
-.link-container a:hover {
-  text-decoration: underline;
-  color: #084a84;
-}
-
-/* No data message styles */
-.no-data-message {
-  background-color: #fff3cd;
-  border: 1px solid #ffc107;
-  border-radius: 6px;
-  padding: 16px;
-  margin: 16px 0;
-  color: #856404;
-  font-size: 1rem;
-  text-align: center;
-}
-
-/* Image row and column styles */
-.image-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin: 16px 0;
-  align-items: center;
-  justify-content: center;
-}
-
-.image-col {
-  flex: 0 1 auto;
-  min-width: 250px;
-  text-align: center;
-}
-
-.image-col img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
