@@ -17,61 +17,13 @@
   <!-- category search merged into search.js; category.js no longer required -->
 
   <!-- External CSS -->
-  <link rel="stylesheet" href="css/master.css">
+<link rel="stylesheet" href="css/master.css">
+<link rel="stylesheet" href="css/search.css">
   <!--overflow:auto allows scrolling of page which is set as hidden in the master.css -->
-  <style>
-    /* 6th March CHANGE: Added custom styling for two-column layout */
-    html,
-    body {
-      overflow: auto !important;
-    }
-
-    /* 6th March CHANGE: Two-column layout container for sidebar and results */
-    .search-container {
-      display: flex;
-      gap: 20px;
-      margin-top: 20px;
-      min-height: calc(100vh - 250px);
-    }
-
-    /* 6th March CHANGE: Left sidebar styling (30% width) */
-    .search-sidebar {
-      width: 30%;
-      padding: 20px;
-      background-color: #f8f9fa;
-      border-radius: 8px;
-      overflow-y: auto;
-      max-height: 90vh;
-    }
-
-    /* 6th March CHANGE: Right results section styling (70% width) */
-    .search-results {
-      width: 70%;
-      padding: 20px;
-      overflow-y: auto;
-      max-height: 90vh;
-    }
-
-    .search-section {
-      margin-bottom: 30px;
-      padding-bottom: 30px;
-      border-bottom: 3px solid #ccc;
-    }
-
-    .search-section:last-child {
-      border-bottom: none;
-    }
-
-    .search-title {
-      text-align: center;
-      text-decoration: underline;
-      margin-bottom: 30px;
-      grid-column: 1 / -1;
-    }
-  </style>
+  
 </head>
 
-<body>
+<body class="search-page">
 
   <!--Navigation bar-->
   <div id="nav-placeholder"></div>
