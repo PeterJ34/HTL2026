@@ -546,12 +546,12 @@ Background for card body used for People and Places accordion text.
 /*   font-size: 15px; */
 }
 
-/* Not sure if this is used. Commented out 12th March 2026 
+/* Not sure if this is used, doesn't seem to be the "Found xx entries" notice. Commented out 12th March 2026 
 .timeline-notice {
   color: #03e950;
   margin: 8px 0;
 }
-*/
+
 
 .timeline-pre {
   background: #f7f7f7;
@@ -606,32 +606,38 @@ Background for card body used for People and Places accordion text.
 }
 
 /* Two-column layout container */
+/* Two-column layout container */
 .search-page .search-container {
   display: flex;
-  gap: 20px;
+  gap: 5px; /*Gap between search boxes and results*/
   margin-top: 20px;
   min-height: calc(100vh - 250px);
+
+  width: 90%;               /* 12 March 2026 - make search container occupy 90% of webpage width */
+  max-width: 1400px;        /* 12 March 2026 - prevent layout becoming too wide on large monitors */
+  margin-left: auto;        /* 12 March 2026 - center container horizontally */
+  margin-right: auto;       /* 12 March 2026 - center container horizontally */
 }
 
-/* Left sidebar (30%) */
+/* Left sidebar (25%) */
 .search-page .search-sidebar {
-  width: 30%;
+  width: 25%;
   padding: 20px;
-  background-color: #f8f9fa;
+  background-image: url("/images/parchment.jpg"); /* Search section background colour*/
   border-radius: 8px;
   overflow-y: auto;
   max-height: 90vh;
 }
 
-/* Right results (70%) */
+/* Right results (75%) */
 .search-page .search-results {
-  width: 70%;
-  padding: 20px;
+  width: 75%;
+  padding: 2px;
   overflow-y: auto;
   max-height: 90vh;
 }
 
-/* Section divider styling */
+/* Search page section divider styling */
 .search-page .search-section {
   margin-bottom: 30px;
   padding-bottom: 30px;
@@ -648,4 +654,10 @@ Background for card body used for People and Places accordion text.
   text-decoration: underline;
   margin-bottom: 30px;
   grid-column: 1 / -1;
+}
+
+/* "Found xx entries" on search page added 12th March*/
+.search-page .notice{
+  color: #7f1629;
+  font-weight: 500;
 }
