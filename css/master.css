@@ -103,7 +103,7 @@ figcaption {
 .link-container a {
   display: block;
   margin: 8px 0;
-  color: #0b61a4;
+  color: #0b61a4; /* More imformation ... text colour */
   text-decoration: none;
   font-size: 0.95rem;
   word-break: break-word;
@@ -350,14 +350,6 @@ Background for card body used for People and Places accordion text.
 
 
 /* =========================================================
-   IMAGE LAYOUTS
-   ========================================================= */
-/* Image/figure layout rules consolidated later in the file under
-   "Image and figure styles" and "Image row and column styles".
-   Keeping that consolidated block prevents duplicate selectors.
-*/
-
-/* =========================================================
    LINK CONTAINER
    ========================================================= */
 .link-container::before {
@@ -366,11 +358,6 @@ Background for card body used for People and Places accordion text.
   font-weight: 600;
  
 }
-
-/* Link styles consolidated later under "Link container styles" to avoid duplicates. */
-
-/* Footer text: legacy/commented styles removed in favor of the active
-   `.copyright-text` defined later in the file. */
 
 /* =========================================================
    SCROLL ARROWS
@@ -559,10 +546,12 @@ Background for card body used for People and Places accordion text.
 /*   font-size: 15px; */
 }
 
+/* Not sure if this is used. Commented out 12th March 2026 
 .timeline-notice {
-  color: #666;
+  color: #03e950;
   margin: 8px 0;
 }
+*/
 
 .timeline-pre {
   background: #f7f7f7;
@@ -593,7 +582,7 @@ Background for card body used for People and Places accordion text.
   margin: 12px 0;
   padding: 12px;
   background: #f0f8ff;
-  border-left: 4px solid #0b61a4;
+  border: 4px solid #7f1629; /*Border round multiple matches box */
   border-radius: 4px;
 }
 
@@ -601,10 +590,62 @@ Background for card body used for People and Places accordion text.
   padding: 8px 10px;
  /* font-size: 15px;
   margin-right: 8px; */
-
+} /*missing prior to 12th March AM */
 .match-dropdown button {
   padding: 8px 12px;
  /* font-size: 15px; */
 }
 
+/* SEARCH PAGE CSS copied from search.css */
+/* Only affects search.html because body has class="search-page" */
 
+/* allow scrolling (master.css hides overflow) */
+.search-page html,
+.search-page body {
+  overflow: auto !important;
+}
+
+/* Two-column layout container */
+.search-page .search-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  min-height: calc(100vh - 250px);
+}
+
+/* Left sidebar (30%) */
+.search-page .search-sidebar {
+  width: 30%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* Right results (70%) */
+.search-page .search-results {
+  width: 70%;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* Section divider styling */
+.search-page .search-section {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid #ccc;
+}
+
+.search-page .search-section:last-child {
+  border-bottom: none;
+}
+
+/* Page title */
+.search-page .search-title {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  grid-column: 1 / -1;
+}
