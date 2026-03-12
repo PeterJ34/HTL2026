@@ -519,7 +519,7 @@
         });
       }
 
-     // if (romhm) parts.push(`<div class="romhm-text">${romhm.innerHTML}</div>`); // commented out 10th March to stop duplicate romhm-text being displayed
+      // if (romhm) parts.push(`<div class="romhm-text">${romhm.innerHTML}</div>`); // commented out 10th March to stop duplicate romhm-text being displayed
       if (linkContainer) parts.push(`<div class="link-container">${linkContainer.innerHTML}</div>`);
       if (copy) parts.push(`<div class="copyright-text">${copy.innerHTML}</div>`);
 
@@ -691,10 +691,6 @@
   }
 
   // category search button listener
-  if (categorySearchBtn) {
-    console.log("Attaching category search listener");
-    categorySearchBtn.addEventListener("click", searchByCategories);
-  } else {
-    console.error("categorySearchBtn element not found!");
-  }
+  // 12 March 2026 - run category search automatically as soon as radio button selected
+  categoryRadios.forEach((radio) => radio.addEventListener("change", searchByCategories));
 })();
