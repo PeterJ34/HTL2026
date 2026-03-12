@@ -261,9 +261,10 @@ figcaption {
 }
 
 .sidebar .nav-link:hover {
-  background: #7f1629;
-  color: #fbde81;
+  background: #fbde81;
+  color: #7f1629 ;
   border-radius: 10px;
+  font-weight: 500;
   /*  font-size: 15px !important;
   nav-link only on side-bar */
 }
